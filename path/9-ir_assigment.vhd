@@ -68,7 +68,7 @@ begin
 			RS2  <= IR_26(20 downto 16);
 			RD   <= IR_26(15 downto 11);
 			IMMEDIATE<= (others => '0'); --func (others => '0');
-	
+			
 
 	elsif (OPCODE = jTYPE)  then 
 			RS1  <= (others => '0');
@@ -86,8 +86,9 @@ begin
 			RS1  <= IR_26(25 downto 21);
 			RD  <= IR_26(20 downto 16);
 			RS2  <= IR_26(20 downto 16);
-			IMMEDIATE  <=IMMEDIATE_16;
-end if;
+			--IMMEDIATE  <=IMMEDIATE_16;
+			
+	end if;
 end if;
 	end process;
 end architecture;

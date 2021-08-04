@@ -56,7 +56,7 @@ begin
 								OUTALU<="00000000000000000000000000000000";
 							end if;
 		
-		when SLE | SLEI => if s_i = '0' and data2i = '1' then 
+		when SLE | SLEI => if s_i = '0' and data2i = '0' then 
 							OUTALU<="00000000000000000000000000000001";
 							else
 								OUTALU<="00000000000000000000000000000000";

@@ -51,12 +51,13 @@ Generic (NBIT: integer:= numBit; REG_BIT: integer:= REG_SIZE);
 		--DTPTH_OUT: out std_logic_vector(NBIT-1 downto 0);
 		
 		--cu signals
-		EN0: in	std_logic;
+		NPC_LATCH_EN: in	std_logic;
+		ir_LATCH_EN: in	std_logic;
 		signed_op: in	std_logic;
 		RF1: in	std_logic;
 		RF2: in	std_logic;
 		WF1: in	std_logic; --sel WB
-		EN1: in	std_logic;
+		regImm_LATCH_EN: in	std_logic;
 		S1: in	std_logic; --sel A
 		S2: in	std_logic; --sel B
 		EN2: in	std_logic;
@@ -247,12 +248,13 @@ end component;
 		  PC =>PC,
 		  IR=>IR,
 		  PC_out=>PC_BUS,
-          EN0 => NPC_LATCH_EN_i,
+         NPC_LATCH_EN => NPC_LATCH_EN_i, --en0
+		  ir_LATCH_EN=>IR_LATCH_EN_i,
 		signed_op=> signed_unsigned_i, --metti
           RF1 => RegA_LATCH_EN_i,
           RF2 => RegB_LATCH_EN_i,
 		  WF1 => RF_WE_i,
-          EN1 => RegIMM_LATCH_EN_i,
+          regImm_LATCH_EN => RegIMM_LATCH_EN_i,  --en1
           S1 => MUXA_SEL_i,
           S2 => MUXB_SEL_i,
           EN2 => ALU_OUTREG_EN_i,

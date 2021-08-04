@@ -206,8 +206,11 @@ begin  -- dlx_cu_rtl
 			jump <= '0';
 			iterator :=0;
 		end if;
-	  else 
-	    cw1 <= cw;
+	 -- elsif aluOpcode1 /= aluOpcode_i then
+	 --   cw1 <= cw;
+	 else 
+		 cw1 <= cw;
+		--cw1<= (others => '0');
 	  end if;
 	  
 -----------------------------------------------------------------------------	  

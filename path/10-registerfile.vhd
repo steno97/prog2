@@ -24,19 +24,21 @@ architecture A of register_file is
         subtype REG_ADDR is natural range 0 to numBit-1; -- using natural type
 	type REG_ARRAY is array(REG_ADDR) of std_logic_vector(numBit-1 downto 0); 
 	signal REGISTERS : REG_ARRAY; 
+	--signal out_1: std_logic_vector(numBit-1 downto 0);
+	--signal out_1: std_logic_vector(numBit-1 downto 0);
 	
 begin 
 	process (CLK)
 	begin
-		if CLK'event and CLK='1' then --and enable='1' then
+		--if CLK'event and CLK='1' then --and enable='1' then
 		if reset='0' then
 			registers<=(OTHERS=> (others=>'0'));	
 			out1<=(others=>'0');
 			out2<=(others=>'0');
 		else --if CLK'event and CLK='1' and reset='1' then
-        if enable='1' then
-			if wr='1' then
-				registers(to_integer(unsigned(add_wr)))<=datain;
+        	if enable='1' then
+				if wr='1' then
+					registers(to_integer(unsigned(add_wr)))<=datain;
 				--bypass
 				--if ((add_wr=add_rd1) and (rd1='1')) then 
 				--	out1<=datain;
@@ -44,7 +46,8 @@ begin
 				--if ((add_wr=add_rd2) and (rd2='1')) then 
 				--	out2<=datain;
 				--end if;
-			end if;
+				end if;
+			if CLK'event and CLK='1' then
 			if rd1='1' then
 				out1<=registers(to_integer(unsigned(add_rd1)));
 			end if;
@@ -52,7 +55,7 @@ begin
 				out2<=registers(to_integer(unsigned(add_rd2)));
 			end if;
 
-		end if;
+			end if;
 		end if;
 		end if;
 	end process;

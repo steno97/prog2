@@ -62,7 +62,12 @@ signal OUTPUT3: std_logic_vector(N-1 downto 0);
 signal OUTPUT_alu_i: std_logic_vector(N-1 downto 0);
 signal Cout_i :  std_logic;
 begin
-  OUT_ALU<=OUTPUT_alu_i;
+  P_out: process (clk,func,OUTPUT_alu_i)
+  begin
+	if Clk'event and Clk = '1' then  
+  	OUT_ALU<=OUTPUT_alu_i;
+	end if;
+  end process;
   comp: comparator
     port map (
 		data1 => output2,
@@ -88,10 +93,9 @@ begin
 		Cout =>	Cout_i); -- open se non funge --we mantain the Cout signal for future implementation of the DLX with status flags
 
 ----da fare tutto il process
---P_ALU: process (FUNC, DATA1, DATA2)
+P_ALU: process (clk, FUNC, DATA1, DATA2)
 --variable tmp_arithmetic: unsigned (N downto 0); --temporary signal for arithmetic computation
-P_ALU: process (clk,FUNC, DATA1, DATA2)
---P_ALU: process (DATA1,DATA2)
+--P_ALU: process (clk,FUNC, DATA1, DATA2)
  begin
 	--if Clk'event and Clk = '1' then  
     case func is
@@ -276,7 +280,7 @@ P_ALU: process (clk,FUNC, DATA1, DATA2)
 				--end if;
 	when others => null;
     end case; 
---	end if;
+	--end if;
   end process P_ALU;
 
 end Architectural;
