@@ -91,8 +91,9 @@ begin
 --P_ALU: process (FUNC, DATA1, DATA2)
 --variable tmp_arithmetic: unsigned (N downto 0); --temporary signal for arithmetic computation
 P_ALU: process (clk,FUNC, DATA1, DATA2)
-  begin
-	
+--P_ALU: process (DATA1,DATA2)
+ begin
+	--if Clk'event and Clk = '1' then  
     case func is
 	
 	when NOP => null;
@@ -210,10 +211,11 @@ P_ALU: process (clk,FUNC, DATA1, DATA2)
 	
 	------------------------------  load and store
 	when SEQ | SEQI | SLT | SLTI | SLTU |SLTUI | SGT | SGTI | SGTUI |SGTU | SGE | SGEI | SGEUI |SGEU |
-			 SNE | SNEI | SLE | SLEI => Cin_i<='1';
+			 SNE | SNEI | SLE | SLEI =>	Cin_i<='1';
 										data2i<= not(data2);
+										data1i<=data1;	
 										OUTPUT_alu_i <= output3;
-							
+										
 	
 --	when SEQ | SEQI =>  if (signed(data1) = signed(data2)) then
 --					OUTPUT_alu_i<="00000000000000000000000000000001";----SEQ | SEQI
@@ -274,6 +276,7 @@ P_ALU: process (clk,FUNC, DATA1, DATA2)
 				--end if;
 	when others => null;
     end case; 
+--	end if;
   end process P_ALU;
 
 end Architectural;

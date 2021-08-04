@@ -179,6 +179,7 @@ end component;
 	signal NPC_Dec: std_logic_vector(NBIT-1 downto 0);
 	signal PC_Dec: std_logic_vector(NBIT-1 downto 0);
 	signal IR_Dec: std_logic_vector(NBIT-1 downto 0);
+	signal IR_FIRST: std_logic_vector(NBIT-1 downto 0);
 	--stage 2
 	signal RS1: std_logic_vector(REG_BIT-1 downto 0);
 	signal RS2: std_logic_vector(REG_BIT-1 downto 0);
@@ -230,7 +231,7 @@ end component;
 	signal NPC_f: std_logic_vector(NBIT-1 downto 0);
 begin
 --stage 1-> inputs: PC; outputs: NPC, IR
-	
+	--pipeline_FIRST:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN0, D=>IR, Q=>IR_FIRST);
 	-- PC->PC+4->NPC
 	--AGGIUNTI STEFANO	
 	npc_proc:process (pc)
@@ -238,12 +239,14 @@ begin
        NPC <= std_logic_vector(unsigned(PC) + to_unsigned(1,NBIT));
     end process;
 	
-	pipeline_f:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>NPC, Q=>NPC_f);
+	pipeline_f:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN0, D=>NPC, Q=>NPC_f);
 	--NPC has to wait IR
 	
 	sel_pc: process (PC_fetch)
 	begin
+		if en3='1' then
 		PC_OUT<=PC_fetch;
+		end if;
 	end process;
 	--AGGIUNTI STEFANO	
 	--NPC <= std_logic_vector(unsigned(PC) + to_unsigned(1,NBIT));
@@ -257,9 +260,9 @@ begin
 	--end process;
 	
 	--pipeline signals (F->D)
-	pipeline_newpc1: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN0, D=>NPC_f, Q=>NPC_Dec);
-	pipeline_pc1:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN0, D=>PC, Q=>PC_Dec);
-	pipeline_IR1:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN0, D=>IR, Q=>IR_Dec);
+	pipeline_newpc1: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>NPC_f, Q=>NPC_Dec);
+	pipeline_pc1:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>PC, Q=>PC_Dec);
+	pipeline_IR1:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>IR, Q=>IR_Dec);
 	---------
 	--ATTENZIONE ERRORE GRAVISSIMO SI USA LO STESSO ENABLE PER I 3 FLIP FLOP MA SONO 3 ENABLE DIVERSI!!!!!!!!!
 	---
@@ -276,7 +279,7 @@ begin
 
 	RF: register_file
 --modificato stefano
-	port map (CLK, RST, EN1, RF1, RF2, WF1, RD_wb, RS1, RS2, OUT_data, regA, regB);
+	port map (CLK, RST, '1', RF1, RF2, WF1, RD_wb, RS1, RS2, OUT_data, regA, regB);
 --port map (CLK, RST, EN1, RF1, RF2, WF1, RD_wb, RS1, RS2, OUT_wb, regA, regB);
 --modificato stefano
 	--CALL=>open, RETRN=>open, FILL=>open, SPILL=>open, BUSin=>open, BUSout=>open, open ports (not handled subroutines: trap and ret instructions)
@@ -285,14 +288,14 @@ begin
 	LHI_id(15 downto 0)<=(others=>'0');
 	
 	--pipeline signals (D->E)
-	pipeline_sign2: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN1, D=>signed_op, Q=>signed_op_ex);
-	pipeline_newpc2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>NPC_Dec, Q=>NPC_ex);
-	pipeline_A2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>regA, Q=>regA_ex);
-	pipeline_B2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>regB, Q=>regB_ex);
+	pipeline_sign2: FF Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>signed_op, Q=>signed_op_ex);
+	pipeline_newpc2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>NPC_Dec, Q=>NPC_ex);
+	pipeline_A2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>rf1, D=>regA, Q=>regA_ex);
+	pipeline_B2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>rf2, D=>regB, Q=>regB_ex);
 	pipeline_IMM2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>Imm, Q=>Imm_ex);
-	pipeline_RD2: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>RD, Q=>RD_ex);
-	pipeline_IR2: regFFD Generic map (2) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>IR_Dec(27 downto 26), Q=>IR_26_ex);
-	pipeline_LHI2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>LHI_id, Q=>LHI_ex);
+	pipeline_RD2: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>RD, Q=>RD_ex);
+	pipeline_IR2: regFFD Generic map (2) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>IR_Dec(27 downto 26), Q=>IR_26_ex);
+	pipeline_LHI2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>LHI_id, Q=>LHI_ex);
 	
 --stage 3-> in: NPC, A, B, Imm, PC; out: NPC, cond, alu_out, B
 
@@ -321,13 +324,13 @@ begin
  	
 
 --pipeline signals (E->M)
-	pipeline_sign3: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN2, D=>signed_op_ex, Q=>signed_op_mem);
-	pipeline_newpc3: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>NPC_ex, Q=>NPC_mem);
+	pipeline_sign3: FF Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>signed_op_ex, Q=>signed_op_mem);
+	pipeline_newpc3: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>NPC_ex, Q=>NPC_mem);
 	pipeline_cond3: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN2, D=>cond, Q=>cond_mem);
 	pipeline_alu3:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=> EN2, D=>ALU_ex, Q=>ALU_mem);
-	pipeline_B3: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>regB_ex, Q=>regB_mem);
-   	pipeline_RD3: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>RD_ex, Q=>RD_mem);
-	pipeline_IR3: regFFD Generic map (2) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>IR_26_ex, Q=>IR_26_mem);
+	pipeline_B3: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>regB_ex, Q=>regB_mem);
+   	pipeline_RD3: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>RD_ex, Q=>RD_mem);
+	pipeline_IR3: regFFD Generic map (2) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>IR_26_ex, Q=>IR_26_mem);
 
 
 --	stage 4-> in: NPC, cond, alu_out, B; out: PC, ALU_out, LMD_out
@@ -368,11 +371,11 @@ begin
 
 	--pipeline signals (M->W)
 	--pipeline_newpc4: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>NPC_mem, Q=>NPC_wb);
-	pipeline_alu4:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>ALU_mem, Q=>ALU_wb);
-	pipeline_LMD4: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>LMD_out, Q=>LMD_wb);
-	pipeline_RD4: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>RD_mem, Q=>RD_wb);
-	pipeline_WM: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN3, D=>WM, Q=>WM_wb);
-	pipeline_JAL: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN3, D=>sel_saved_reg, Q=>sel_saved_reg_wb);
+	pipeline_alu4:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>ALU_mem, Q=>ALU_wb);
+	pipeline_LMD4: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>LMD_out, Q=>LMD_wb);
+	pipeline_RD4: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>RD_mem, Q=>RD_wb);
+	pipeline_WM: FF Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>WM, Q=>WM_wb);
+	pipeline_JAL: FF Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>sel_saved_reg, Q=>sel_saved_reg_wb);
 
 --	stage 5-> in: ALU_out, LMD_out, out: OUT_WB
 

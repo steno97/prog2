@@ -9,10 +9,10 @@ z2
 cModel Technology
 Z0 d/home/ms21.42/Desktop/prova progetto
 T_opt
-!s110 1627748539
-Vk=0`RoRQA7:l;@D4BKcil1
+!s110 1628068242
+VP=o4h>Te94WQF];]S@GKW3
 04 6 0 work cfg_tb 1
-=1-5254009c17d7-610578bb-68710-2998
+=1-5254009c17d7-610a5992-4e597-4abc
 Z1 o-quiet -auto_acc_if_foreign -work work
 Z2 tCvgOpt 0
 n@_opt
@@ -38,7 +38,7 @@ n@_opt2
 R3
 R0
 Ealu
-Z4 w1626686859
+Z4 w1628068198
 Z5 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 Z6 DPx4 work 7 mytypes 0 22 g7lkdZSncQV:S5e25J=AB2
 Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
@@ -55,9 +55,9 @@ VUEc3z8Fj`DlCAPbGn0RfM2
 !s100 VK1ihWJ<?hPXRKE7lRiBm1
 Z14 OL;C;10.7c;67
 32
-Z15 !s110 1627660520
+Z15 !s110 1628068208
 !i10b 1
-Z16 !s108 1627660520.000000
+Z16 !s108 1628068207.000000
 Z17 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd|
 Z18 !s107 /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd|
 !i113 0
@@ -74,8 +74,8 @@ R11
 Z21 DEx4 work 3 alu 0 22 UEc3z8Fj`DlCAPbGn0RfM2
 l64
 L21
-V42Y93?MQ_Z?m4XN]`>zi01
-!s100 DzVK6EaXi61D`IMF2ZW>J0
+Vd`5b2NiPWf<hjWE1a@hTX2
+!s100 F:_2]n^z1mE[dZT]elhHD1
 R14
 32
 R15
@@ -143,7 +143,7 @@ R23
 Z32 DEx4 work 8 p4_adder 0 22 eEYO0[5[QRdG0WI1hiLnJ2
 Z33 DEx4 work 15 shifter_generic 0 22 o30e@[]ZY=3mOnhd7Oaa60
 Z34 DEx4 work 10 comparator 0 22 eHUbRN3J7OT@TkEHI47g?2
-DAx4 work 3 alu 13 architectural 22 42Y93?MQ_Z?m4XN]`>zi01
+DAx4 work 3 alu 13 architectural 22 d`5b2NiPWf<hjWE1a@hTX2
 R5
 R6
 R7
@@ -157,9 +157,9 @@ R0
 R12
 R13
 l0
-L285
-VV^Xf7_o^5JC=cm:Zm86071
-!s100 dJK2g>am?E9B<[MF^kjPX3
+L288
+V^BCVGgKaYke6h<9`@kQVQ1
+!s100 Q6G^gG0bzJXkhi_ZZ>e?U0
 R14
 32
 R15
@@ -879,9 +879,9 @@ VWm@PT6mFWSJ_l=n?nmal]1
 !s100 oh@;PfM5DUPQ4f?e[[AhO3
 R14
 32
-Z159 !s110 1627748526
+Z159 !s110 1628068214
 !i10b 0
-Z160 !s108 1627748526.000000
+Z160 !s108 1628068214.000000
 Z161 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/TB_DLX.vhd|
 Z162 !s107 /home/ms21.42/Desktop/prova progetto/TB_DLX.vhd|
 !i113 0
@@ -1068,7 +1068,7 @@ R48
 R19
 R20
 Edatapth
-Z185 w1627747082
+Z185 w1628064291
 R7
 R5
 R6
@@ -1083,9 +1083,9 @@ Vc]GHHP`dZS6^2Wia_A0d`1
 !s100 Tn]PTWgcm3bLVVeFhW=en0
 R14
 32
-Z188 !s110 1627748519
+Z188 !s110 1628068209
 !i10b 1
-Z189 !s108 1627748519.000000
+Z189 !s108 1628068209.000000
 Z190 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd|
 Z191 !s107 /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd|
 !i113 0
@@ -1098,10 +1098,10 @@ R6
 R10
 R11
 DEx4 work 7 datapth 0 22 c]GHHP`dZS6^2Wia_A0d`1
-l231
+l232
 L53
-VT]jdA1F7lcAFOUb1[j<@B0
-!s100 UL8]C;X51g7c@KWdVhWk[0
+Vh_=1FKmCd[d8Z77Gj`Vzk0
+!s100 N7fLImC2H=05h]aFi_JEn1
 R14
 32
 R188
@@ -1127,9 +1127,9 @@ VA=BL9FmZSSkcdBYZJ0SST3
 !s100 H_MV_d_a7d@W;X>1nGa`K3
 R14
 32
-Z195 !s110 1627748525
+Z195 !s110 1628068213
 !i10b 1
-Z196 !s108 1627748525.000000
+Z196 !s108 1628068213.000000
 Z197 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a-DLX.vhd|
 Z198 !s107 /home/ms21.42/Desktop/prova progetto/a-DLX.vhd|
 !i113 0
@@ -1171,9 +1171,9 @@ VNMz;3NET02oY_oc5ACn]C1
 !s100 5XLf^eb??H2bKWHkciEXc0
 R14
 32
-Z202 !s110 1627748522
+Z202 !s110 1627917442
 !i10b 1
-Z203 !s108 1627748522.000000
+Z203 !s108 1627917442.000000
 Z204 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd|
 Z205 !s107 /home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd|
 !i113 0
@@ -1399,9 +1399,9 @@ V6EHgZ_HkJHeA[7[1dOCI10
 !s100 gT_8g1k>0YCD`^[faC@O51
 R14
 32
-Z217 !s110 1627748523
+Z217 !s110 1627917443
 !i10b 1
-Z218 !s108 1627748523.000000
+Z218 !s108 1627917443.000000
 Z219 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd|
 Z220 !s107 /home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd|
 !i113 0
