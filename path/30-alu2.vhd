@@ -93,7 +93,7 @@ begin
 		Cout =>	Cout_i); -- open se non funge --we mantain the Cout signal for future implementation of the DLX with status flags
 
 ----da fare tutto il process
-P_ALU: process (clk, FUNC, DATA1, DATA2)
+P_ALU: process (clk, DATA1, DATA2)
 --variable tmp_arithmetic: unsigned (N downto 0); --temporary signal for arithmetic computation
 --P_ALU: process (clk,FUNC, DATA1, DATA2)
  begin

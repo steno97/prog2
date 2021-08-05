@@ -28,7 +28,8 @@ architecture A of register_file is
 	--signal out_1: std_logic_vector(numBit-1 downto 0);
 	
 begin 
-	process (CLK)
+	process (rd1,rd2,wr,ADD_RD1, ADD_RD2,ADD_WR)
+	--process (clk)	
 	begin
 		--if CLK'event and CLK='1' then --and enable='1' then
 		if reset='0' then
@@ -47,7 +48,7 @@ begin
 				--	out2<=datain;
 				--end if;
 				end if;
-			if CLK'event and CLK='1' then
+			--if CLK'event and CLK='1' then
 			if rd1='1' then
 				out1<=registers(to_integer(unsigned(add_rd1)));
 			end if;
@@ -55,7 +56,7 @@ begin
 				out2<=registers(to_integer(unsigned(add_rd2)));
 			end if;
 
-			end if;
+			--end if;
 		end if;
 		end if;
 	end process;
