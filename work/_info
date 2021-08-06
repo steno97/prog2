@@ -9,10 +9,10 @@ z2
 cModel Technology
 Z0 d/home/ms21.42/Desktop/prova progetto
 T_opt
-!s110 1628159686
-V>K;2S@`KnAbDb;YYzFN?O2
+!s110 1628238648
+V41K1cL`3^jkZd1j0Nn_Q<3
 04 6 0 work cfg_tb 1
-=1-5254009c17d7-610bbec5-c2c4c-6c60
+=1-5254009c17d7-610cf338-3f497-3549
 Z1 o-quiet -auto_acc_if_foreign -work work
 Z2 tCvgOpt 0
 n@_opt
@@ -55,9 +55,9 @@ VUEc3z8Fj`DlCAPbGn0RfM2
 !s100 VK1ihWJ<?hPXRKE7lRiBm1
 Z14 OL;C;10.7c;67
 32
-Z15 !s110 1628159630
+Z15 !s110 1628238629
 !i10b 1
-Z16 !s108 1628159630.000000
+Z16 !s108 1628238629.000000
 Z17 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd|
 Z18 !s107 /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd|
 !i113 0
@@ -142,7 +142,7 @@ R24
 R23
 Z32 DEx4 work 8 p4_adder 0 22 eEYO0[5[QRdG0WI1hiLnJ2
 Z33 DEx4 work 15 shifter_generic 0 22 o30e@[]ZY=3mOnhd7Oaa60
-Z34 DEx4 work 10 comparator 0 22 eHUbRN3J7OT@TkEHI47g?2
+Z34 DEx4 work 10 comparator 0 22 b;3Q?2X?SDMcaYHWgR>S23
 DAx4 work 3 alu 13 architectural 22 HEbd4z0oEQ`4zcQ@Ei__?0
 R5
 R6
@@ -879,9 +879,9 @@ VWm@PT6mFWSJ_l=n?nmal]1
 !s100 oh@;PfM5DUPQ4f?e[[AhO3
 R14
 32
-Z159 !s110 1628159670
+Z159 !s110 1628238634
 !i10b 0
-Z160 !s108 1628159670.000000
+Z160 !s108 1628238634.000000
 Z161 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/TB_DLX.vhd|
 Z162 !s107 /home/ms21.42/Desktop/prova progetto/TB_DLX.vhd|
 !i113 0
@@ -916,7 +916,8 @@ Z170 !s107 /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd|
 R19
 R20
 Ecomparator
-Z171 w1628090282
+Z171 w1628238625
+R8
 R5
 R6
 R10
@@ -925,29 +926,30 @@ R0
 Z172 8/home/ms21.42/Desktop/prova progetto/path/13-comparator.vhdl
 Z173 F/home/ms21.42/Desktop/prova progetto/path/13-comparator.vhdl
 l0
-L7
-VeHUbRN3J7OT@TkEHI47g?2
-!s100 LWm26[DSW;gfc[9FA;^Kk3
+L8
+Vb;3Q?2X?SDMcaYHWgR>S23
+!s100 U[P>gIjh1Fh9iE:6f3Q`^0
 R14
 32
-Z174 !s110 1628090902
+Z174 !s110 1628238627
 !i10b 1
-Z175 !s108 1628090902.000000
+Z175 !s108 1628238627.000000
 Z176 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/13-comparator.vhdl|
 Z177 !s107 /home/ms21.42/Desktop/prova progetto/path/13-comparator.vhdl|
 !i113 0
 R19
 R20
 Aarchitectural
+R8
 R5
 R6
 R10
 R11
 R34
-l19
-L14
-V?^zC6GX^;M=9:zDOW2XIf1
-!s100 4X9^?L^T96FSEL2Y5L8iW3
+l21
+L15
+VVze_[F1zPK:_33lP0X<8]2
+!s100 KYn5624fUz_Q?kdT1WJ8l3
 R14
 32
 R174
@@ -1083,9 +1085,9 @@ V_eHFEBaWj?AS[=[;ZiHeo1
 !s100 aQ3<[3CUNz>i7WAKfm?ed0
 R14
 32
-Z188 !s110 1628159665
+Z188 !s110 1628238630
 !i10b 1
-Z189 !s108 1628159665.000000
+Z189 !s108 1628238630.000000
 Z190 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd|
 Z191 !s107 /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd|
 !i113 0
@@ -1127,9 +1129,9 @@ VA=BL9FmZSSkcdBYZJ0SST3
 !s100 H_MV_d_a7d@W;X>1nGa`K3
 R14
 32
-Z195 !s110 1628159668
+Z195 !s110 1628238633
 !i10b 1
-Z196 !s108 1628159668.000000
+Z196 !s108 1628238633.000000
 Z197 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a-DLX.vhd|
 Z198 !s107 /home/ms21.42/Desktop/prova progetto/a-DLX.vhd|
 !i113 0
