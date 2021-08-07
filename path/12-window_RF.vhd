@@ -29,7 +29,8 @@ entity windRF is
 		ADD_RD2: 	IN std_logic_vector(virt_addr-1 downto 0);
 		DATAIN: 	IN std_logic_vector(NBIT-1 downto 0); --write port
 		OUT1: 		OUT std_logic_vector(NBIT-1 downto 0); --read port
-		OUT2: 		OUT std_logic_vector(NBIT-1 downto 0)
+		OUT2: 		OUT std_logic_vector(NBIT-1 downto 0);
+		wr_signal:  	IN std_logic
 );
 end windRF;
 
@@ -74,9 +75,9 @@ end function;
 
 
 begin  
-	process (CLK)
+	process (rd1,rd2,wr,ADD_RD1, ADD_RD2,ADD_WR)
 	begin
-		if CLK'event and CLK='1' then
+		--if CLK'event and CLK='1' then
 		if reset='0' then
 			registers<=(others =>(others =>'0'));
 			out1<=(others =>'0');
@@ -151,7 +152,7 @@ begin
 			end if;
 
 			--RF part equal to RF of exercise 1
-			if wr='1' then
+			if wr='1' and wr_signal = '1' then
 				registers(to_integer(unsigned(conv_addr(add_wr,CWP))))<=datain;
 				--bypass
 				if ((add_wr=add_rd1) and (rd1='1')) then 
@@ -168,7 +169,7 @@ begin
 				out2<=registers(to_integer(unsigned(conv_addr(add_rd2,CWP))));
 			end if;
 
-		end if;
+		--end if;
 		end if;
 	end process;
 

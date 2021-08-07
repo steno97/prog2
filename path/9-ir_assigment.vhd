@@ -56,13 +56,18 @@ begin
 
 	SIGN_EXTENSION_imm26: sign_eval
 	generic map (NBIT-opBIT, NBIT)
-	port map (IR_26, '1', IMMEDIATE_26);
+	port map (IR_26, '0', IMMEDIATE_26);
 	--j,jal (signed imm)
 	--JR, JALR SONO DI TIPO I_TYPE 
 
 	dec_IR : process(clk,IMMEDIATE_16)
 	begin
 	if clk='1' then
+--	if (OPCODE = "010101") then
+	--		RS1  <= IR_26(25 downto 21);
+		--	RD  <= "UUUUUU";
+	--		RS2  <= IR_26(20 downto 16);
+	--		IMMEDIATE  <=IMMEDIATE_16;
 	if (OPCODE = rTYPE)  then   
 			RS1  <= IR_26(25 downto 21);
 			RS2  <= IR_26(20 downto 16);

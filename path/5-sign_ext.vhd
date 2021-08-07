@@ -18,6 +18,6 @@ architecture BHV of sign_eval is
 	constant ones : std_logic_vector(N_out-N_in-1 downto 0) := (others => '1');
 	
 	begin
-		immediate <= ones&IR_out when (signed_val = '1' and IR_out(N_in-1) = '1') else zeros&IR_out;
+		immediate <= ones&IR_out when (signed_val = '0' and IR_out(N_in-1) = '1') else zeros&IR_out;
 		
 end BHV;

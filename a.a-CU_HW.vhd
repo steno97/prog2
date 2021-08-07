@@ -329,7 +329,7 @@ begin  -- dlx_cu_rtl
 		when 10 => aluOpcode_i <= SUBI; --SUBI
 				signed_unsigned_i<='0';
 		when 11 => aluOpcode_i <= SUBUI; --SUBUI
-				signed_unsigned_i<='0';
+				signed_unsigned_i<='1';
 		when 12 => aluOpcode_i <= ANDI; --ANDI
 				signed_unsigned_i<='1';
 		when 13 => aluOpcode_i <= ORI; --ORI

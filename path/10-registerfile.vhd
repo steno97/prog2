@@ -16,7 +16,8 @@ entity register_file is
 	 ADD_RD2: 	IN std_logic_vector(REG_SIZE-1 downto 0);
 	 DATAIN: 	IN std_logic_vector(numBit-1 downto 0);
          OUT1: 		OUT std_logic_vector(numBit-1 downto 0);
-	 OUT2: 		OUT std_logic_vector(numBit-1 downto 0));
+	 OUT2: 		OUT std_logic_vector(numBit-1 downto 0);
+		wr_signal:  	IN std_logic);
 end register_file;
 
 architecture A of register_file is
@@ -38,7 +39,7 @@ begin
 			out2<=(others=>'0');
 		else --if CLK'event and CLK='1' and reset='1' then
         	if enable='1' then
-				if wr='1' then
+				if wr='1'and wr_signal = '1' then
 					registers(to_integer(unsigned(add_wr)))<=datain;
 				--bypass
 				--if ((add_wr=add_rd1) and (rd1='1')) then 

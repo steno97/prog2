@@ -27,7 +27,7 @@ if load_op = '1' then
 		--end if;
 	elsif load_type= "00" then --byte (lb e lbu)
 	 data_out(7 downto 0)<= data_in(7 downto 0);
-		if signed_val='0' then data_out(31 downto 8)<= (others=>'0');
+		if signed_val='1' then data_out(31 downto 8)<= (others=>'0');
 		else data_out(31 downto 8)<= (others=>data_in(31));
 		end if;
 

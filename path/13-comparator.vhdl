@@ -46,7 +46,7 @@ begin
 								OUTALU<="00000000000000000000000000000000";
 							end if;
 		
-		when SGT | SGTI | SGTUI |SGTU  =>  if data2i = '1' and conv_integer(unsigned(data1))=0 then 
+		when SGT | SGTI | SGTUI |SGTU  =>  if data2i = '1' and conv_integer(unsigned(data1))/=0 then 
 							OUTALU<="00000000000000000000000000000001";
 							else
 								OUTALU<="00000000000000000000000000000000";
@@ -64,7 +64,7 @@ begin
 								OUTALU<="00000000000000000000000000000000";
 							end if;
 		
-		when SLE | SLEI => if conv_integer(unsigned(data1))=0 and data2i = '0' then 
+		when SLE | SLEI => if conv_integer(unsigned(data1))=0 or data2i = '0' then 
 							OUTALU<="00000000000000000000000000000001";
 							else
 								OUTALU<="00000000000000000000000000000000";
