@@ -104,24 +104,24 @@ P_ALU: process (clk, DATA1, DATA2)
 		
 	--sono da fare le istruzioni di branch-------------------------------------------------------------	
 	
-	when BEQZ => if (data1 /= data2) then
-					OUTPUT_alu_i<="00000000000000000000000000000000";----snei
-				end if;
-				 if (data1 = data2) then
-					OUTPUT_alu_i<="00000000000000000000000000000001";----snei
-				end if;
-	when BNEZ => if (data1 = data2) then
-					OUTPUT_alu_i<="00000000000000000000000000000000";----snei
-				end if;
-				 if (data1 /= data2) then
-					OUTPUT_alu_i<="00000000000000000000000000000001";----snei
-				end if;	
+	--when BEQZ => if (data1 /= data2) then
+	--				OUTPUT_alu_i<="00000000000000000000000000000000";----snei
+		--		end if;
+		--		 if (data1 = data2) then
+		--			OUTPUT_alu_i<="00000000000000000000000000000001";----snei
+				--end if;
+	--when BNEZ => if (data1 = data2) then
+		--			OUTPUT_alu_i<="00000000000000000000000000000000";----snei
+			--	end if;
+				-- if (data1 /= data2) then
+					--OUTPUT_alu_i<="00000000000000000000000000000001";----snei
+				--end if;	
 	--sono da fare le istruzioni di branch-------------------------------------------------------------		
 		
 		
 		
 		
-	when ADDS | ADDUI 	=>  Cin_i<='0';
+	when ADDS | ADDUI |BEQZ |BNEZ	=>  Cin_i<='0';
 					OUTPUT_alu_i<= output2;	
 					data2i<=data2;
 					data1i<=data1;

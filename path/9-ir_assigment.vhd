@@ -30,7 +30,7 @@ architecture BEHAV of IR_DECODE is
  signal rTYPE: std_logic_vector(opBIT-1 downto 0) :="000000";
  signal jTYPE: std_logic_vector(opBIT-1 downto 0) := "00001X";
  signal jrTYPE: std_logic_vector(opBIT-1 downto 0) := "01001X";
- --j=0x02='000010', jal=0x03='000011' 
+ --j=0x02='000010', jal=0x03='000011'  
  --jr=0x12='010010', jalr=0x13='010011' 
  
 --components

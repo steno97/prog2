@@ -9,10 +9,10 @@ z2
 cModel Technology
 Z0 d/home/ms21.42/Desktop/prova progetto
 T_opt
-!s110 1628359626
-VNc>c=NobPCd?bU9dGj3]`3
+!s110 1628432509
+VZm<c@n3CCk[5Vkn6PB4Dh0
 04 6 0 work cfg_tb 1
-=1-5254009c17d7-610ecbca-51d77-22eb
+=1-5254009c17d7-610fe87d-8cb2b-62ad
 Z1 o-quiet -auto_acc_if_foreign -work work
 Z2 tCvgOpt 0
 n@_opt
@@ -38,7 +38,7 @@ n@_opt2
 R3
 R0
 Ealu
-Z4 w1628158623
+Z4 w1628432483
 Z5 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 Z6 DPx4 work 7 mytypes 0 22 g7lkdZSncQV:S5e25J=AB2
 Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
@@ -55,9 +55,9 @@ VUEc3z8Fj`DlCAPbGn0RfM2
 !s100 VK1ihWJ<?hPXRKE7lRiBm1
 Z14 OL;C;10.7c;67
 32
-Z15 !s110 1628357438
+Z15 !s110 1628432494
 !i10b 1
-Z16 !s108 1628357438.000000
+Z16 !s108 1628432494.000000
 Z17 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd|
 Z18 !s107 /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd|
 !i113 0
@@ -74,8 +74,8 @@ R11
 Z21 DEx4 work 3 alu 0 22 UEc3z8Fj`DlCAPbGn0RfM2
 l64
 L21
-VHEbd4z0oEQ`4zcQ@Ei__?0
-!s100 2G]@7L?F00nYWm2:983e03
+Vdehl>c@^gie_NbINa<K<m1
+!s100 UOUK@Nf5XJV^@j_e<ocdF2
 R14
 32
 R15
@@ -143,7 +143,7 @@ R23
 Z32 DEx4 work 8 p4_adder 0 22 eEYO0[5[QRdG0WI1hiLnJ2
 Z33 DEx4 work 15 shifter_generic 0 22 o30e@[]ZY=3mOnhd7Oaa60
 Z34 DEx4 work 10 comparator 0 22 b;3Q?2X?SDMcaYHWgR>S23
-DAx4 work 3 alu 13 architectural 22 HEbd4z0oEQ`4zcQ@Ei__?0
+DAx4 work 3 alu 13 architectural 22 dehl>c@^gie_NbINa<K<m1
 R5
 R6
 R7
@@ -879,9 +879,9 @@ VWm@PT6mFWSJ_l=n?nmal]1
 !s100 oh@;PfM5DUPQ4f?e[[AhO3
 R14
 32
-Z159 !s110 1628359608
+Z159 !s110 1628432499
 !i10b 0
-Z160 !s108 1628359608.000000
+Z160 !s108 1628432499.000000
 Z161 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/TB_DLX.vhd|
 Z162 !s107 /home/ms21.42/Desktop/prova progetto/TB_DLX.vhd|
 !i113 0
@@ -1085,9 +1085,9 @@ V_eHFEBaWj?AS[=[;ZiHeo1
 !s100 aQ3<[3CUNz>i7WAKfm?ed0
 R14
 32
-Z188 !s110 1628359604
+Z188 !s110 1628432496
 !i10b 1
-Z189 !s108 1628359604.000000
+Z189 !s108 1628432495.000000
 Z190 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd|
 Z191 !s107 /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd|
 !i113 0
@@ -1129,9 +1129,9 @@ VA=BL9FmZSSkcdBYZJ0SST3
 !s100 H_MV_d_a7d@W;X>1nGa`K3
 R14
 32
-Z195 !s110 1628359607
+Z195 !s110 1628432498
 !i10b 1
-Z196 !s108 1628359607.000000
+Z196 !s108 1628432498.000000
 Z197 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a-DLX.vhd|
 Z198 !s107 /home/ms21.42/Desktop/prova progetto/a-DLX.vhd|
 !i113 0
@@ -1173,9 +1173,9 @@ VNMz;3NET02oY_oc5ACn]C1
 !s100 5XLf^eb??H2bKWHkciEXc0
 R14
 32
-Z202 !s110 1628355631
+Z202 !s110 1628431197
 !i10b 1
-Z203 !s108 1628355631.000000
+Z203 !s108 1628431197.000000
 Z204 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd|
 Z205 !s107 /home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd|
 !i113 0
@@ -1387,7 +1387,7 @@ R212
 R19
 R20
 Eiram
-Z213 w1628355109
+Z213 w1628431143
 Z214 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R8
 R10
@@ -1401,9 +1401,9 @@ V6EHgZ_HkJHeA[7[1dOCI10
 !s100 gT_8g1k>0YCD`^[faC@O51
 R14
 32
-Z217 !s110 1628355632
+Z217 !s110 1628431198
 !i10b 1
-Z218 !s108 1628355632.000000
+Z218 !s108 1628431198.000000
 Z219 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd|
 Z220 !s107 /home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd|
 !i113 0
@@ -1417,8 +1417,8 @@ R11
 DEx4 work 4 iram 0 22 6EHgZ_HkJHeA[7[1dOCI10
 l29
 L23
-V7Nh]PT;_6m`d9H_?ji_CK1
-!s100 47[RQVeKm:l9>hY:BZ<A50
+V:^Jh:gila1AReca0l;=ZE0
+!s100 N7feGY3G:<AX?IA^8ERX=0
 R14
 32
 R217
