@@ -73,7 +73,7 @@ return std_logic_vector is
 end function;
 
 
-
+		
 begin  
 	process (rd1,rd2,wr,ADD_RD1, ADD_RD2,ADD_WR)
 	begin
@@ -89,7 +89,7 @@ begin
 			i <= 0;
 			BUSout <= (others => '0'); 
 
-		elsif enable='1' then --if enable do cases for call and return
+		else if enable='1' then --if enable do cases for call and return
 
 			--CWP is shifted by 2N positions when call
 			--SWP is shifted by 2N positions when spill
@@ -151,25 +151,28 @@ begin
 				end if; 			--OTHERWISE: if (mem_ack='1') then FILL <= '0'; end if;
 			end if;
 
-			--RF part equal to RF of exercise 1
-			if wr='1' and wr_signal = '1' then
-				registers(to_integer(unsigned(conv_addr(add_wr,CWP))))<=datain;
+
+
+				if wr='1'and wr_signal = '1' then
+					registers(to_integer(unsigned(add_wr)))<=datain;
 				--bypass
-				if ((add_wr=add_rd1) and (rd1='1')) then 
-					out1<=datain;
+				--if ((add_wr=add_rd1) and (rd1='1')) then 
+				--	out1<=datain;
+				--end if;
+				--if ((add_wr=add_rd2) and (rd2='1')) then 
+				--	out2<=datain;
+				--end if;
 				end if;
-				if ((add_wr=add_rd2) and (rd2='1')) then 
-					out2<=datain;
-				end if;
-			end if;
+			--if CLK'event and CLK='1' then
 			if rd1='1' then
-				out1<=registers(to_integer(unsigned(conv_addr(add_rd1,CWP))));
+				out1<=registers(to_integer(unsigned(add_rd1)));
 			end if;
 			if rd2='1' then
-				out2<=registers(to_integer(unsigned(conv_addr(add_rd2,CWP))));
+				out2<=registers(to_integer(unsigned(add_rd2)));
 			end if;
 
-		--end if;
+			--end if;
+		end if;
 		end if;
 	end process;
 

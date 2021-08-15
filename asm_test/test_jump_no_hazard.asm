@@ -1,5 +1,5 @@
 addi r1,r0,#1
-addi r2,r0,#31
+addi r2,r0,#6
 nop
 nop
 nop
@@ -16,12 +16,12 @@ nop
 nop
 nop
 nop
+j #13
 nop
 beqz r0,#2
 nop
-j 92
 nop
-addi r4,r0,#128
+addi r4,r0,#21
 nop
 nop
 nop

@@ -100,7 +100,10 @@ P_ALU: process (clk, DATA1, DATA2)
 	--if Clk'event and Clk = '1' then  
     case func is
 	
-	when NOP => null;
+	when NOP =>  Cin_i<='0';
+					OUTPUT_alu_i<= output2;	
+					data2i<=data2;
+					data1i<=data1;
 		
 	--sono da fare le istruzioni di branch-------------------------------------------------------------	
 	

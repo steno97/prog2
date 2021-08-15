@@ -60,14 +60,9 @@ begin
 	--j,jal (signed imm)
 	--JR, JALR SONO DI TIPO I_TYPE 
 
-	dec_IR : process(clk,IMMEDIATE_16)
+	dec_IR : process(clk,IR_26,IMMEDIATE_16,iMMEDIATE_26)
 	begin
 	if clk='1' then
---	if (OPCODE = "010101") then
-	--		RS1  <= IR_26(25 downto 21);
-		--	RD  <= "UUUUUU";
-	--		RS2  <= IR_26(20 downto 16);
-	--		IMMEDIATE  <=IMMEDIATE_16;
 	if (OPCODE = rTYPE)  then   
 			RS1  <= IR_26(25 downto 21);
 			RS2  <= IR_26(20 downto 16);
@@ -94,38 +89,8 @@ begin
 			IMMEDIATE  <=IMMEDIATE_16;
 			
 	end if;
-end if;
+	end if;
 	end process;
---begin 
---uno:if clk='1' generate
---	due:if (OPCODE = rTYPE)  generate   
---			RS1  <= IR_26(25 downto 21);
---			RS2  <= IR_26(20 downto 16);
---			RD   <= IR_26(15 downto 11);
---			IMMEDIATE<= (others => '0'); --func (others => '0');
-			
---	end generate;
---	tre:if (OPCODE = jTYPE)  generate 
---			RS1  <= (others => '0');
---			RS2  <= (others => '0');
---			RD   <= (others => '1'); --R31
---			gen1:sign_eval generic map (NBIT-opBIT, NBIT)port map (IR_26, '1', IMMEDIATE);
---	end generate;
---	quattro:if (OPCODE = jrTYPE)  generate 
---			RS1  <= IR_26(25 downto 21);
---			RS2  <= (others => '1');
---			RD   <= (others => '1'); --R31
---			gen2:sign_eval generic map (16, NBIT) port map (IR_26(15 downto 0), is_signed, IMMEDIATE);
---		end generate;
---	cinque:if (OPCODE /= jrTYPE and OPCODE /= jTYPE and OPCODE /= jTYPE) generate
-----		--I-TYPE
---			RS1  <= IR_26(25 downto 21);
---			RD  <= IR_26(20 downto 16);
---			RS2  <= IR_26(20 downto 16);
---			gen3:sign_eval generic map (16, NBIT) port map (IR_26(15 downto 0), is_signed, IMMEDIATE);
---	end generate;
-
---end generate;
 end architecture;
 
 		

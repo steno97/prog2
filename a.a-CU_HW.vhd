@@ -66,8 +66,8 @@ architecture dlx_cu_hw of dlx_cu is
   type mem_array is array (integer range 0 to MICROCODE_MEM_SIZE- 1) of std_logic_vector(CW_SIZE - 1 downto 0);
   signal cw_mem : mem_array := ("111100010000111", -- R type: IS IT CORRECT?
                                 "000000000000000", 
-                                "111011111001100", -- J (0X02) instruction encoding corresponds to the address to this ROM
-                                "111011111001111", -- JAL to be filled          
+                                "111010111001100", -- J (0X02) instruction encoding corresponds to the address to this ROM
+                                "111010111001111", -- JAL to be filled          
                                 "110011110001100", -- BEQZ to be filled
                                 "110011111001100", -- BNEZ                         
                                 "000000000000000",  -- we do not implement the bfpt instruction so we use this for the stall

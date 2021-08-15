@@ -19,11 +19,13 @@ architecture BHV of COND_BT is
 begin	
 	dec_cond: process (branch_op)
 	begin
-	if (branch_op='1') then 
-			con_sign <= (OPCODE_0 xor ZERO_BIT);
-		else 
-			con_sign <= '0';
-		end if;
+	if (branch_op='0' and ZERO_BIT='1') then
+		con_sign<='1';
+	elsif (branch_op='1' and ZERO_BIT='0') then 
+			con_sign<='1';
+	else 
+		con_sign <= '0';
+	end if;
 	end process;
 	
 end BHV;

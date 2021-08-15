@@ -1,7 +1,7 @@
 l1: 
 addi r1,r0,#2	# r1 = 2
 nop
-addi r3,r1,#-4	# r3 = -2  err
+addi r3,r1,#-4	# r3 = -2 
 subi r2,r1,#1	# r2 = 1
 subi r4,r3,#-1	# r4 = -1 
 addui r5,r1,#4	# r5 = 6
