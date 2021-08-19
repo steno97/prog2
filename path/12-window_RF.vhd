@@ -75,7 +75,7 @@ end function;
 
 		
 begin  
-	process (rd1,rd2,wr,ADD_RD1, ADD_RD2,ADD_WR)
+	process (rd1,rd2,wr,ADD_RD1, ADD_RD2,DATAIN)
 	begin
 		--if CLK'event and CLK='1' then
 		if reset='0' then

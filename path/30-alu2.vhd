@@ -105,25 +105,6 @@ P_ALU: process (clk, DATA1, DATA2)
 					data2i<=data2;
 					data1i<=data1;
 		
-	--sono da fare le istruzioni di branch-------------------------------------------------------------	
-	
-	--when BEQZ => if (data1 /= data2) then
-	--				OUTPUT_alu_i<="00000000000000000000000000000000";----snei
-		--		end if;
-		--		 if (data1 = data2) then
-		--			OUTPUT_alu_i<="00000000000000000000000000000001";----snei
-				--end if;
-	--when BNEZ => if (data1 = data2) then
-		--			OUTPUT_alu_i<="00000000000000000000000000000000";----snei
-			--	end if;
-				-- if (data1 /= data2) then
-					--OUTPUT_alu_i<="00000000000000000000000000000001";----snei
-				--end if;	
-	--sono da fare le istruzioni di branch-------------------------------------------------------------		
-		
-		
-		
-		
 	when ADDS | ADDUI |BEQZ |BNEZ	=>  Cin_i<='0';
 					OUTPUT_alu_i<= output2;	
 					data2i<=data2;
@@ -203,17 +184,29 @@ P_ALU: process (clk, DATA1, DATA2)
 	---------------------------- load and store 
 	
 	when LW	=> 	Cin_i<='0';
+				data2i<=data2;
+				data1i<=data1;
 				OUTPUT_alu_i<= output2;
 	when SW =>	Cin_i<='0';
+				data2i<=data2;
+				data1i<=data1;
 				OUTPUT_alu_i<= output2;
 	
 	when LB	=> 	Cin_i<='0';
+				data2i<=data2;
+				data1i<=data1;
 				OUTPUT_alu_i<= output2;
 	when SB =>	Cin_i<='0';
+				data2i<=data2;
+				data1i<=data1;
 				OUTPUT_alu_i<= output2;
-	when LBU => 	Cin_i<='0';
+	when LBU => Cin_i<='0';
+				data2i<=data2;
+				data1i<=data1;				
 				OUTPUT_alu_i<= output2;
 	when LHU => Cin_i<='0';
+				data2i<=data2;
+				data1i<=data1;				
 				OUTPUT_alu_i<= output2;
 	
 	------------------------------  load and store
@@ -223,67 +216,9 @@ P_ALU: process (clk, DATA1, DATA2)
 										data1i<=data1;	
 										OUTPUT_alu_i <= output3;
 										
-	
---	when SEQ | SEQI =>  if (signed(data1) = signed(data2)) then
---					OUTPUT_alu_i<="00000000000000000000000000000001";----SEQ | SEQI
---				end if;
---				 if (signed(data1) /= signed(data2)) then
---					OUTPUT_alu_i<="00000000000000000000000000000000";----SEQ | SEQI
---				end if;
-	
---	when SLT | SLTI  => if (signed(data1) >= signed(data2)) then
---					OUTPUT_alu_i<="00000000000000000000000000000000";----slei
---				end if;
---				 if (signed(data1) < signed(data2)) then
---					OUTPUT_alu_i<="00000000000000000000000000000001";----slei
---				end if;
---	when SLTU |SLTUI =>      if (unsigned(data1) >= unsigned(data2)) then
-					
-					--OUTPUT_alu_i<="00000000000000000000000000000000";----slei
-				--end if;
-				 --if (unsigned(data1) < unsigned(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000001";----slei
-				--end if;
-	--when SGT | SGTI  =>    if (signed(data1) < signed(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000000";----slei
-				--end if;
-				 --if (signed(data1) > signed(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000001";----slei
-				--end if;
-	 --when SGTUI |SGTU => if (unsigned(data1) < unsigned(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000000";----slei
-				--end if;
-				 --if (unsigned(data1) > unsigned(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000001";----slei
-				--end if;
-		--when SGE| SGEI =>    if (signed(data1) < signed(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000000";----slei
-				--end if;
-				 --if (signed(data1) >= signed(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000001";----slei
-				--end if;
-	--when  SGEUI |SGEU =>    if (unsigned(data1) < unsigned(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000000";----slei
-				--end if;
-				 --if (unsigned(data1) >= unsigned(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000001";----slei
-				--end if;
-	--when SNE | SNEI => if (signed(data1) /= signed(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000001";----snei
-				--end if;
-				 --if (signed(data1) = signed(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000000";----snei
-				--end if;
-				
-	--when SLE | SLEI =>      if (signed(data1) > signed(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000000";----slei
-				--end if;
-				 --if (signed(data1) <= signed(data2)) then
-					--OUTPUT_alu_i<="00000000000000000000000000000001";----slei
-				--end if;
+
 	when others => null;
     end case; 
-	--end if;
   end process P_ALU;
 
 end Architectural;

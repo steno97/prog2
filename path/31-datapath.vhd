@@ -200,7 +200,7 @@ end component;
 	signal regB_ex: std_logic_vector(NBIT-1 downto 0);
 	signal Imm_ex: std_logic_vector(NBIT-1 downto 0);
 	signal RD_ex: std_logic_vector(REG_BIT-1 downto 0);
-	signal IR_26_ex: std_logic_vector(1 downto 0);
+	signal IR_26_ex: std_logic_vector(5 downto 0);
 	signal LHI_ex:std_logic_vector(NBIT-1 downto 0);
 	signal signed_op_ex: std_logic;
 	--stage 3 
@@ -216,12 +216,13 @@ end component;
 	signal regB_mem: std_logic_vector(NBIT-1 downto 0);
 	signal RD_mem: std_logic_vector(REG_BIT-1 downto 0);
 	signal signed_op_mem: std_logic;
-	signal IR_26_mem: std_logic_vector(1 downto 0);
+	signal IR_26_mem: std_logic_vector(5 downto 0);
 	--stage 4:
 	signal sel_saved_reg: std_logic;
 	signal sel_npc: std_logic;
 	--pipe
 	signal ALU_wb: std_logic_vector(NBIT-1 downto 0);
+	signal NPC_wb: std_logic_vector(NBIT-1 downto 0);
 	signal sel_saved_reg_wb: std_logic;
 	signal LMD_wb: std_logic_vector(NBIT-1 downto 0);
 	signal RD_wb: std_logic_vector(REG_BIT-1 downto 0);
@@ -266,7 +267,7 @@ begin
 	----this process is used to avoid writing during nop operation, we assign '0' to wr_signal in case of nop operations
 	signal_wr: process (Ir_dec)
 	begin
-	if IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="010101" or IR_Dec="00000000000000000000000000000000"  then
+	if IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="010101" or IR_Dec="00000000000000000000000000000000"  or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101011" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="001111" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="001111" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100011" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100100" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100101" then
 		wr_signal<='0';
 	else 
 		wr_signal<='1';
@@ -276,7 +277,7 @@ begin
 	--RF mapping
 	RF: windRF
  	generic map (M=>5,N=>5, F=>3, NBIT=>32)
- 	port map( CLK=>CLK, RESET=>RST, ENABLE=>'1', CALL=>'0', RETRN=>'0', FILL=>open, SPILL=>open, BUSin=>(others=>'0'), BUSout=>open, RD1=> RF1, RD2=> RF2, WR=>WF1, ADD_WR=>RD_wb, ADD_RD1=>RS1, ADD_RD2=>RS2, DATAIN=>OUT_data, OUT1=>regA, OUT2=>regB, wr_signal=>wr_signal_wb);
+ 	port map( CLK=>CLK, RESET=>RST, ENABLE=>'1', CALL=>'0', RETRN=>'0', FILL=>open, SPILL=>open, BUSin=>(others=>'0'), BUSout=>open, RD1=> RF1, RD2=> RF2, WR=>WF1, ADD_WR=>RD_wb, ADD_RD1=>RS1, ADD_RD2=>RS2, DATAIN=>OUT_wb, OUT1=>regA, OUT2=>regB, wr_signal=>wr_signal_wb);
 
 	--RF: register_file
 	--modificato stefano
@@ -293,7 +294,7 @@ begin
 	pipeline_IMM2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>regImm_LATCH_EN, D=>Imm, Q=>Imm_ex);
 	pipeline_RD2: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>RD, Q=>RD_ex);
 	pipeline_wr_signal:FF Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>wr_signal, Q=>wr_signal_exe);
-	pipeline_IR2: regFFD Generic map (2) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>IR_Dec(27 downto 26), Q=>IR_26_ex);
+	pipeline_IR2: regFFD Generic map (6) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>IR_Dec(nbit-1 downto 26), Q=>IR_26_ex);
 	pipeline_LHI2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>LHI_id, Q=>LHI_ex);
 	
 --stage 3-> in: NPC, A, B, Imm, PC; out: NPC, cond, alu_out, B
@@ -329,7 +330,7 @@ begin
 	pipeline_B3: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>regB_ex, Q=>regB_mem);
    	pipeline_RD3: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>RD_ex, Q=>RD_mem);
 	pipeline_wr_signal2:FF  Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>wr_signal_exe, Q=>wr_signal_mem);
-	pipeline_IR3: regFFD Generic map (2) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>IR_26_ex, Q=>IR_26_mem);
+	pipeline_IR3: regFFD Generic map (6) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>IR_26_ex, Q=>IR_26_mem);
 
 
 --	stage 4-> in: NPC, cond, alu_out, B; out: PC, ALU_out, LMD_out
@@ -337,18 +338,21 @@ begin
 	begin
 	sel_saved_reg <= (IR_26_mem(0) and jump_en);
 	end process;
-	--if jal o jalr: save npc in r31
 
 	sel_npc_op: process (cond_mem, jump_en )
 	begin
+	if IR_26_mem="000010" or IR_26_mem="000011" or IR_26_mem="010010" or IR_26_mem="010010" then
+		sel_npc<='1';
+	else
 	sel_npc <= (cond_mem and jump_en);
+	end if;	
 	end process;
 
 	MUX_PC: MUX21_GENERIC 
 	Port Map (ALU_ex, NPC_mem, sel_npc, PC_OUT); 
 	--if branch taken or jump instruction-> pc =alu_out
 	
-	MUX_data_in: process (sb_op)
+	MUX_data_in: process (sb_op,regB_mem)
 	begin
 		if sb_op='1' then
 		regB_in (31 downto 8)<=(others=>'0');
@@ -358,15 +362,16 @@ begin
 	end process;
 	
 	--data_memory -- guarda dov'è data memory
+	----deve entrare solo se è una store
 	DATA_MEM_ADDR<= ALU_ex;
 	DATA_MEM_IN<= regB_in;
 	DATA_MEM_RM<=RM; --read=load op
 	DATA_MEM_WM<=WM; --write= store op
 	DATA_MEM_ENABLE<=EN3;
 
-	MUX_wr_signal: process (jump_en, wr_signal_mem)
+	MUX_wr_signal: process (jump_en, wr_signal_mem,IR_26_mem)
 	begin
-	if jump_en='0' then
+	if jump_en='0' or IR_26_mem="000011" or IR_26_mem="010011"  then
 		wr_signal_mem1<=wr_signal_mem;
 	else	
 		wr_signal_mem1<='0';
@@ -376,7 +381,7 @@ begin
 	
 	--lmd
 	LOAD_DATA_OUT: load_data
-	port map(data_in=>DATA_MEM_OUT, signed_val=>signed_op_mem, load_op=>RM, load_type=>IR_26_mem, data_out=>LMD_out);
+	port map(data_in=>DATA_MEM_OUT, signed_val=>signed_op_mem, load_op=>RM, load_type=>IR_26_mem(1 downto 0), data_out=>LMD_out);
 
 	--pipeline signals (M->W)
 	pipeline_alu4:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>ALU_ex, Q=>ALU_wb);
@@ -385,6 +390,7 @@ begin
 	pipeline_wr_signal3:FF Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>wr_signal_mem1, Q=>wr_signal_wb);
 	pipeline_WM: FF Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>WM, Q=>WM_wb);
 	pipeline_JAL: FF Port map(CLK=>CLK, RESET=>RST,EN=>'1', D=>sel_saved_reg, Q=>sel_saved_reg_wb);
+	pipeline_NPC_wb: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>NPC_mem, Q=>NPC_wb);
 
 --	stage 5-> in: ALU_out, LMD_out, out: OUT_WB
 
@@ -392,7 +398,16 @@ begin
 	Port Map (ALU_wb, LMD_wb, S3, OUT_data);-- sel_WB==S3
 	
 	MUX_jal: MUX21_GENERIC 
-	Port Map (NPC_mem, OUT_WB, sel_saved_reg_wb, OUT_wb);-- saved_reg='1'-->npc else out wb
+	--MUX_jal: process (NPC_mem,OUT_data,sel_saved_reg_wb)
+	--begin
+	--if sel_saved_reg_wb='1'  then
+	--	OUT_wb<=NPC_mem;
+	--else	
+	--	OUT_wb<=OUT_data;
+	--end if;
+	--end process;
+
+	Port Map (NPC_wb, OUT_data, sel_saved_reg_wb, OUT_wb);-- saved_reg='1'-->npc else out wb
    --DTPTH_OUT<=OUT_wb;
    -- WF1 disponibile 
 end architecture;

@@ -9,27 +9,26 @@ z2
 cModel Technology
 Z0 d/home/ms21.42/Desktop/prova progetto
 T_opt
-!s110 1629058176
-VM2UT^]Vh94645Om0MO:eM0
+!s110 1629389487
+V99iLLdKD398IXik=YWbn21
 04 6 0 work cfg_tb 1
-=1-5254009c17d7-61197480-10b7b-3461
+=1-5254009c17d7-611e82ae-cba86-5e5c
 Z1 o-quiet -auto_acc_if_foreign -work work
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;10.7c;67
-R0
 T_opt1
-!s110 1628847733
-V`T3iH`iiBVKXkD1ZMeWAn1
+!s110 1629218548
+V9DUfo`W;K92WO:7kO2oc`0
 04 6 4 work tb_dlx test 1
-=1-5254009c17d7-61163e75-7f9e-70fe
+=1-5254009c17d7-611be6f4-38f2c-192d
 R1
 R2
 n@_opt1
 R3
 R0
 Ealu
-Z4 w1628949408
+Z4 w1629131910
 Z5 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 Z6 DPx4 work 7 mytypes 0 22 g7lkdZSncQV:S5e25J=AB2
 Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
@@ -46,9 +45,9 @@ VUEc3z8Fj`DlCAPbGn0RfM2
 !s100 VK1ihWJ<?hPXRKE7lRiBm1
 Z14 OL;C;10.7c;67
 32
-Z15 !s110 1628952754
+Z15 !s110 1629385714
 !i10b 1
-Z16 !s108 1628952753.000000
+Z16 !s108 1629385714.000000
 Z17 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd|
 Z18 !s107 /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd|
 !i113 0
@@ -65,8 +64,8 @@ R11
 Z21 DEx4 work 3 alu 0 22 UEc3z8Fj`DlCAPbGn0RfM2
 l64
 L21
-VYIPBdRLK2=<RBcSdR=[1D1
-!s100 mNTFfM:_>LhKE<U54A98C3
+VT_=o3e5heoVYT8FV:;kFe0
+!s100 A=5SU[IzD<=FkkaVFMdg^0
 R14
 32
 R15
@@ -134,7 +133,7 @@ R23
 Z32 DEx4 work 8 p4_adder 0 22 eEYO0[5[QRdG0WI1hiLnJ2
 Z33 DEx4 work 15 shifter_generic 0 22 o30e@[]ZY=3mOnhd7Oaa60
 Z34 DEx4 work 10 comparator 0 22 b;3Q?2X?SDMcaYHWgR>S23
-DAx4 work 3 alu 13 architectural 22 YIPBdRLK2=<RBcSdR=[1D1
+DAx4 work 3 alu 13 architectural 22 T_=o3e5heoVYT8FV:;kFe0
 R5
 R6
 R7
@@ -148,9 +147,9 @@ R0
 R12
 R13
 l0
-L295
-V^NY241o]AjLi8mA_Nkb_d0
-!s100 VO@lbDGmUX6PE:h2Z0_]Z3
+L230
+Vn449<T^jJz<[>=KXT:[hH0
+!s100 =eO8H^f^;LSCRRPMTKjhb3
 R14
 32
 R15
@@ -870,9 +869,9 @@ VWm@PT6mFWSJ_l=n?nmal]1
 !s100 oh@;PfM5DUPQ4f?e[[AhO3
 R14
 32
-Z160 !s110 1629058162
+Z160 !s110 1629389469
 !i10b 0
-Z161 !s108 1629058162.000000
+Z161 !s108 1629389469.000000
 Z162 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/TB_DLX.vhd|
 Z163 !s107 /home/ms21.42/Desktop/prova progetto/TB_DLX.vhd|
 !i113 0
@@ -881,14 +880,14 @@ R20
 Ccfg_windrf_bhv
 ewindRF
 abhv
-DAx4 work 6 windrf 3 bhv 22 =j4Eb7?Qh:iYYZlG79TGz2
+DAx4 work 6 windrf 3 bhv 22 1@`GjZXa;WBkiV6@g8XKW0
 R5
 R6
 R7
 R10
 R11
 Z164 DEx4 work 6 windrf 0 22 M3OCJ39T1hh5_5m6GBoKh2
-Z165 w1628845927
+Z165 w1629275262
 R0
 Z166 8/home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd
 Z167 F/home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd
@@ -898,9 +897,9 @@ Vn=VU;F[:IGY4kCm5m4mSb1
 !s100 1[M=_4M8LTVA8:>ClKRP[1
 R14
 32
-Z168 !s110 1628847648
+Z168 !s110 1629275276
 !i10b 0
-Z169 !s108 1628847648.000000
+Z169 !s108 1629275276.000000
 Z170 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd|
 Z171 !s107 /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd|
 !i113 0
@@ -1061,7 +1060,7 @@ R48
 R19
 R20
 Edatapth
-Z186 w1629060172
+Z186 w1629387680
 R7
 R5
 R6
@@ -1076,9 +1075,9 @@ V_eHFEBaWj?AS[=[;ZiHeo1
 !s100 aQ3<[3CUNz>i7WAKfm?ed0
 R14
 32
-Z189 !s110 1629060211
+Z189 !s110 1629387697
 !i10b 1
-Z190 !s108 1629060211.000000
+Z190 !s108 1629387697.000000
 Z191 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd|
 Z192 !s107 /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd|
 !i113 0
@@ -1091,10 +1090,10 @@ R6
 R10
 R11
 DEx4 work 7 datapth 0 22 _eHFEBaWj?AS[=[;ZiHeo1
-l239
+l240
 L54
-V0B4?65=1eglW5g6Z6R_630
-!s100 GJDOzQ4>gWOO1`3Y^lQ1b1
+VDBa1[?iRFdc6@^0E6aPhh0
+!s100 GFcBiP?3Zi]I4L1MNG@k60
 R14
 32
 R189
@@ -1120,9 +1119,9 @@ VA=BL9FmZSSkcdBYZJ0SST3
 !s100 H_MV_d_a7d@W;X>1nGa`K3
 R14
 32
-Z196 !s110 1629058161
+Z196 !s110 1629389468
 !i10b 1
-Z197 !s108 1629058161.000000
+Z197 !s108 1629389468.000000
 Z198 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a-DLX.vhd|
 Z199 !s107 /home/ms21.42/Desktop/prova progetto/a-DLX.vhd|
 !i113 0
@@ -1149,7 +1148,7 @@ R199
 R19
 R20
 Edlx_cu
-Z200 w1628949853
+Z200 w1629389099
 R5
 R6
 R8
@@ -1164,9 +1163,9 @@ VNMz;3NET02oY_oc5ACn]C1
 !s100 5XLf^eb??H2bKWHkciEXc0
 R14
 32
-Z203 !s110 1628951400
+Z203 !s110 1629389466
 !i10b 1
-Z204 !s108 1628951400.000000
+Z204 !s108 1629389466.000000
 Z205 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd|
 Z206 !s107 /home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd|
 !i113 0
@@ -1181,8 +1180,8 @@ R11
 DEx4 work 6 dlx_cu 0 22 NMz;3NET02oY_oc5ACn]C1
 l155
 L65
-VB>]g^Qm7<3D^;<64m8o?i3
-!s100 @m?68f8CgNN]]J<YifVZb0
+V]kRnd>i;<=<5M`W>AJgJM2
+!s100 X5;;FEJC9_cL]aRV>zSOX2
 R14
 32
 R203
@@ -1333,7 +1332,7 @@ R80
 R19
 R20
 Eir_decode
-Z207 w1629058683
+Z207 w1629385648
 R5
 R6
 R8
@@ -1348,9 +1347,9 @@ VLLYckCzDbcMV3EKYY9WNV3
 !s100 ]f1UWGXcI8@`K83aV0B0O0
 R14
 32
-Z210 !s110 1629060212
+Z210 !s110 1629385701
 !i10b 1
-Z211 !s108 1629060212.000000
+Z211 !s108 1629385701.000000
 Z212 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/9-ir_assigment.vhd|
 Z213 !s107 /home/ms21.42/Desktop/prova progetto/path/9-ir_assigment.vhd|
 !i113 0
@@ -1362,11 +1361,11 @@ R6
 R8
 R10
 R11
-Z214 DEx4 work 9 ir_decode 0 22 LLYckCzDbcMV3EKYY9WNV3
-l46
+DEx4 work 9 ir_decode 0 22 LLYckCzDbcMV3EKYY9WNV3
+l49
 L24
-VB9IEbLImLA_mB<co3U[;Q0
-!s100 5bN6cDY639^zlf6j;WMjg2
+VShIQ3H]nW657H_@`657YW3
+!s100 J6N;;8QOLR?1iCPYzH9RM1
 R14
 32
 R210
@@ -1378,45 +1377,45 @@ R213
 R19
 R20
 Eiram
-Z215 w1628875598
-Z216 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z214 w1629389448
+Z215 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R8
 R10
 R11
 R0
-Z217 8/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd
-Z218 F/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd
+Z216 8/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd
+Z217 F/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd
 l0
 L11
 V6EHgZ_HkJHeA[7[1dOCI10
 !s100 gT_8g1k>0YCD`^[faC@O51
 R14
 32
-Z219 !s110 1628951399
+Z218 !s110 1629389459
 !i10b 1
-Z220 !s108 1628951398.000000
-Z221 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd|
-Z222 !s107 /home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd|
+Z219 !s108 1629389459.000000
+Z220 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd|
+Z221 !s107 /home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd|
 !i113 0
 R19
 R20
 Airam_bhe
-R216
+R215
 R8
 R10
 R11
 DEx4 work 4 iram 0 22 6EHgZ_HkJHeA[7[1dOCI10
 l29
 L23
-V:^Jh:gila1AReca0l;=ZE0
-!s100 N7feGY3G:<AX?IA^8ERX=0
+Vje^P95dd@V]mLl5j;ACaX0
+!s100 OIPdiFf<W_I2lXC0oSCg03
 R14
 32
-R219
+R218
 !i10b 1
+R219
 R220
 R221
-R222
 !i113 0
 R19
 R20
@@ -1469,19 +1468,19 @@ R8
 R10
 R11
 R0
-Z223 8/home/ms21.42/Desktop/prova progetto/path/p4/5-lfsr.vhd
-Z224 F/home/ms21.42/Desktop/prova progetto/path/p4/5-lfsr.vhd
+Z222 8/home/ms21.42/Desktop/prova progetto/path/p4/5-lfsr.vhd
+Z223 F/home/ms21.42/Desktop/prova progetto/path/p4/5-lfsr.vhd
 l0
 L6
 V?NiPZdG9n;2@objYfbGWA3
 !s100 L[m8V_6C>;0ScP9MX`Wi11
 R14
 32
-Z225 !s110 1628847660
+Z224 !s110 1628847660
 !i10b 1
-Z226 !s108 1628847660.000000
-Z227 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/p4/5-lfsr.vhd|
-Z228 !s107 /home/ms21.42/Desktop/prova progetto/path/p4/5-lfsr.vhd|
+Z225 !s108 1628847660.000000
+Z226 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/p4/5-lfsr.vhd|
+Z227 !s107 /home/ms21.42/Desktop/prova progetto/path/p4/5-lfsr.vhd|
 !i113 0
 R19
 R20
@@ -1496,35 +1495,35 @@ VnZbPa@87ffdiXdl0QYic^3
 !s100 Zd7^eezldY<`n>c8T4VN10
 R14
 32
-R225
+R224
 !i10b 1
+R225
 R226
 R227
-R228
 !i113 0
 R19
 R20
 Eload_data
-Z229 w1628355408
+Z228 w1628355408
 R7
 R5
 R6
 R10
 R11
 R0
-Z230 8/home/ms21.42/Desktop/prova progetto/path/11-load_eval.vhd
-Z231 F/home/ms21.42/Desktop/prova progetto/path/11-load_eval.vhd
+Z229 8/home/ms21.42/Desktop/prova progetto/path/11-load_eval.vhd
+Z230 F/home/ms21.42/Desktop/prova progetto/path/11-load_eval.vhd
 l0
 L6
 VLDeH>Un1[IbYESoN5b>I62
 !s100 G@i<<fg6Fb]NE?R6Xn7<g2
 R14
 32
-Z232 !s110 1628847647
+Z231 !s110 1628847647
 !i10b 1
-Z233 !s108 1628847647.000000
-Z234 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/11-load_eval.vhd|
-Z235 !s107 /home/ms21.42/Desktop/prova progetto/path/11-load_eval.vhd|
+Z232 !s108 1628847647.000000
+Z233 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/11-load_eval.vhd|
+Z234 !s107 /home/ms21.42/Desktop/prova progetto/path/11-load_eval.vhd|
 !i113 0
 R19
 R20
@@ -1541,11 +1540,11 @@ V2OKa^RRJo9e3DUCH@eOV>0
 !s100 ^DVaC04=::aMh`U<g?EJ82
 R14
 32
-R232
+R231
 !i10b 1
+R232
 R233
 R234
-R235
 !i113 0
 R19
 R20
@@ -2125,19 +2124,19 @@ R8
 R10
 R11
 R0
-Z236 8/home/ms21.42/Desktop/prova progetto/path/01-generic_shifter.vhd
-Z237 F/home/ms21.42/Desktop/prova progetto/path/01-generic_shifter.vhd
+Z235 8/home/ms21.42/Desktop/prova progetto/path/01-generic_shifter.vhd
+Z236 F/home/ms21.42/Desktop/prova progetto/path/01-generic_shifter.vhd
 l0
 L10
 Vo30e@[]ZY=3mOnhd7Oaa60
 !s100 MkJJNcIQ[8YDbZ;8X2>ZR1
 R14
 32
-Z238 !s110 1628847632
+Z237 !s110 1628847632
 !i10b 1
-Z239 !s108 1628847632.000000
-Z240 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/01-generic_shifter.vhd|
-Z241 !s107 /home/ms21.42/Desktop/prova progetto/path/01-generic_shifter.vhd|
+Z238 !s108 1628847632.000000
+Z239 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/01-generic_shifter.vhd|
+Z240 !s107 /home/ms21.42/Desktop/prova progetto/path/01-generic_shifter.vhd|
 !i113 0
 R19
 R20
@@ -2153,35 +2152,35 @@ V2PMNPbA;TVOSH`b1l;knI1
 !s100 h7UNAYc5TT14zmEN]D<lj3
 R14
 32
-R238
+R237
 !i10b 1
+R238
 R239
 R240
-R241
 !i113 0
 R19
 R20
 Esign_eval
-Z242 w1628354987
+Z241 w1628354987
 R5
 R6
 R8
 R10
 R11
 R0
-Z243 8/home/ms21.42/Desktop/prova progetto/path/5-sign_ext.vhd
-Z244 F/home/ms21.42/Desktop/prova progetto/path/5-sign_ext.vhd
+Z242 8/home/ms21.42/Desktop/prova progetto/path/5-sign_ext.vhd
+Z243 F/home/ms21.42/Desktop/prova progetto/path/5-sign_ext.vhd
 l0
 L7
 VO?KQm=0oCAD[W^UQTfgzc2
 !s100 d2I;<DB@zjbB2OSWX@l?B3
 R14
 32
-Z245 !s110 1628847638
+Z244 !s110 1629385698
 !i10b 1
-Z246 !s108 1628847638.000000
-Z247 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/5-sign_ext.vhd|
-Z248 !s107 /home/ms21.42/Desktop/prova progetto/path/5-sign_ext.vhd|
+Z245 !s108 1629385698.000000
+Z246 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/5-sign_ext.vhd|
+Z247 !s107 /home/ms21.42/Desktop/prova progetto/path/5-sign_ext.vhd|
 !i113 0
 R19
 R20
@@ -2198,11 +2197,11 @@ V>ggigLo91cLTOD_AdL6eJ3
 !s100 :dM6@5cVedof2khE7aLXb0
 R14
 32
-R245
+R244
 !i10b 1
+R245
 R246
 R247
-R248
 !i113 0
 R19
 R20
@@ -2323,8 +2322,8 @@ R11
 R164
 l77
 L40
-V=j4Eb7?Qh:iYYZlG79TGz2
-!s100 CQW[JIojBP5a5CJZJZSE62
+V1@`GjZXa;WBkiV6@g8XKW0
+!s100 _5Z[GfOZCk_m0[Q_X@0Zh3
 R14
 32
 R168
@@ -2336,25 +2335,25 @@ R171
 R19
 R20
 Ezero_eval
-Z249 w1625238485
+Z248 w1625238485
 R7
 R8
 R10
 R11
 R0
-Z250 8/home/ms21.42/Desktop/prova progetto/path/0-zero_evaluation.vhd
-Z251 F/home/ms21.42/Desktop/prova progetto/path/0-zero_evaluation.vhd
+Z249 8/home/ms21.42/Desktop/prova progetto/path/0-zero_evaluation.vhd
+Z250 F/home/ms21.42/Desktop/prova progetto/path/0-zero_evaluation.vhd
 l0
 L7
 V^o6W_5mOd1^kOHD];hHY41
 !s100 ;ReeJE4cDhSaYMmYOiM[A0
 R14
 32
-Z252 !s110 1628951613
+Z251 !s110 1628951613
 !i10b 1
-Z253 !s108 1628951613.000000
-Z254 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/0-zero_evaluation.vhd|
-Z255 !s107 /home/ms21.42/Desktop/prova progetto/path/0-zero_evaluation.vhd|
+Z252 !s108 1628951613.000000
+Z253 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/prova progetto/path/0-zero_evaluation.vhd|
+Z254 !s107 /home/ms21.42/Desktop/prova progetto/path/0-zero_evaluation.vhd|
 !i113 0
 R19
 R20
@@ -2370,11 +2369,11 @@ VdP6XF_lcbQi:=J64MG5XD1
 !s100 6R>ehG6IMSa7V_T@D=2N[2
 R14
 32
-R252
+R251
 !i10b 1
+R252
 R253
 R254
-R255
 !i113 0
 R19
 R20

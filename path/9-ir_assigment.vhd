@@ -28,8 +28,11 @@ architecture BEHAV of IR_DECODE is
  signal IMMEDIATE_26: std_logic_vector(NBIT-1 downto 0);
 --constants
  signal rTYPE: std_logic_vector(opBIT-1 downto 0) :="000000";
- signal jTYPE: std_logic_vector(opBIT-1 downto 0) := "00001X";
- signal jrTYPE: std_logic_vector(opBIT-1 downto 0) := "01001X";
+ signal jTYPE: std_logic_vector(opBIT-1 downto 0) := "000010";
+ signal jTYPE_link: std_logic_vector(opBIT-1 downto 0) := "000011";
+
+ signal jrTYPE: std_logic_vector(opBIT-1 downto 0) := "010010";
+signal jrTYPE_link: std_logic_vector(opBIT-1 downto 0) := "010011";
  --j=0x02='000010', jal=0x03='000011'  
  --jr=0x12='010010', jalr=0x13='010011' 
  
@@ -55,7 +58,7 @@ begin
 	--beqz, bnez signed in teoria
 
 	SIGN_EXTENSION_imm26: sign_eval
-	generic map (NBIT-opBIT, NBIT)
+	generic map (26, NBIT)
 	port map (IR_26, '0', IMMEDIATE_26);
 	--j,jal (signed imm)
 	--JR, JALR SONO DI TIPO I_TYPE 
@@ -73,10 +76,19 @@ begin
 	elsif (OPCODE = jTYPE)  then 
 			RS1  <= (others => '0');
 			RS2  <= (others => '0');
+			RD   <= (others => '0'); --R31
+			IMMEDIATE  <=IMMEDIATE_26;
+	elsif (OPCODE = jTYPE_link)  then 
+			RS1  <= (others => '0');
+			RS2  <= (others => '0');
 			RD   <= (others => '1'); --R31
 			IMMEDIATE  <=IMMEDIATE_26;
-
 	elsif (OPCODE = jrTYPE)  then 
+			RS1  <= IR_26(25 downto 21);
+			RS2  <= (others => '1');
+			RD   <= (others => '0'); --R31
+			IMMEDIATE <=IMMEDIATE_16;
+	elsif (OPCODE = jrTYPE_link)  then 
 			RS1  <= IR_26(25 downto 21);
 			RS2  <= (others => '1');
 			RD   <= (others => '1'); --R31
