@@ -199,19 +199,17 @@ begin  -- dlx_cu_rtl
       aluOpcode2 <= NOP;
       aluOpcode3 <= NOP;
     elsif Clk'event and Clk = '1' then  -- rising clock edge
-      if jump = '1' then 
-		cw1 <=cw_mem(6);
-		iterator := iterator+1;
-		if iterator = 3 then
-			jump <= '0';
-			iterator :=0;
-		end if;
-	 -- elsif aluOpcode1 /= aluOpcode_i then
-	 --   cw1 <= cw;
-	 else 
+	--we introduce this condition to be sure that while we are evaluating a 	      
+	--if jump = '1' then 
+	--	cw1 <=cw_mem(6);
+	--	iterator := iterator+1;
+	--	if iterator = 3 then
+	--		jump <= '0';
+	--		iterator :=0;
+	--	end if;
+	 --else 
 		 cw1 <= cw;
-		--cw1<= (others => '0');
-	  end if;
+	-- end if;
 	  
 -----------------------------------------------------------------------------	  
 	  if lhi_sel_i='1' then
@@ -307,7 +305,6 @@ begin  -- dlx_cu_rtl
 							signed_unsigned_i<='1';
 				when 61 => aluOpcode_i <= SGEU; -- SGEU
 							signed_unsigned_i<='1';
-				-- to be continued and filled with all the other instructions  
 				when others => aluOpcode_i <= NOP;
 			end case;
 		when 2 => aluOpcode_i <= NOP; -- j
@@ -336,7 +333,7 @@ begin  -- dlx_cu_rtl
 				signed_unsigned_i<='1';
 		when 14 => aluOpcode_i <= XORI; --XORI
 				signed_unsigned_i<='1';
-		when 15 => aluOpcode_i <= NOP; --LHI , LHI carica solo un valore nel registro non deve essere eseguita alcuna operazione
+		when 15 => aluOpcode_i <= NOP; --LHI,it loads only a value in the register so it has not to perform any operation
 				signed_unsigned_i<='0';
 				 lhi_sel_i<='1';
 		when 18 => aluOpcode_i <= NOP; --jr
@@ -384,14 +381,8 @@ begin  -- dlx_cu_rtl
 				signed_unsigned_i<='1';
 		when 61 => aluOpcode_i <= SGEUI; --SGEUI
 				signed_unsigned_i<='1';
-		-- to be continued and filled with other cases
 		when others => aluOpcode_i <= NOP;
 	 end case;
 	end process ALU_OP_CODE_P;
-
-
---- devo aggiungere un segnale per quando l'istruzione è un brench o altro
---- in modo che le 4 istruzioni successive siano nop
-
 
 end dlx_cu_hw;

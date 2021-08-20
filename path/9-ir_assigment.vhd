@@ -76,7 +76,7 @@ begin
 	elsif (OPCODE = jTYPE)  then 
 			RS1  <= (others => '0');
 			RS2  <= (others => '0');
-			RD   <= (others => '0'); --R31
+			RD   <= (others => '0'); 
 			IMMEDIATE  <=IMMEDIATE_26;
 	elsif (OPCODE = jTYPE_link)  then 
 			RS1  <= (others => '0');
@@ -85,12 +85,12 @@ begin
 			IMMEDIATE  <=IMMEDIATE_26;
 	elsif (OPCODE = jrTYPE)  then 
 			RS1  <= IR_26(25 downto 21);
-			RS2  <= (others => '1');
-			RD   <= (others => '0'); --R31
+			RS2  <= (others => '0');
+			RD   <= (others => '0'); 
 			IMMEDIATE <=IMMEDIATE_16;
 	elsif (OPCODE = jrTYPE_link)  then 
 			RS1  <= IR_26(25 downto 21);
-			RS2  <= (others => '1');
+			RS2  <= (others => '0');
 			RD   <= (others => '1'); --R31
 			IMMEDIATE <=IMMEDIATE_16;
 	else

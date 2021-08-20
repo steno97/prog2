@@ -22,7 +22,7 @@ begin
 	if (branch_op='0' and ZERO_BIT='1') then
 		con_sign<='1';
 	elsif (branch_op='1' and ZERO_BIT='0') then 
-			con_sign<='1';
+		con_sign<='1';
 	else 
 		con_sign <= '0';
 	end if;
@@ -30,5 +30,5 @@ begin
 	
 end BHV;
 
---branch taken--> cond_sign=1
+-- branch taken--> cond_sign=1
 -- bnot taken or not branch opcode-->cond_sign=0;

@@ -26,7 +26,7 @@ Generic (NBIT: integer:= numBit; REG_BIT: integer:= REG_SIZE);
 		RF1: in	std_logic;
 		RF2: in	std_logic;
 		WF1: in	std_logic; --sel WB
-		 regImm_LATCH_EN: in	std_logic; --en1
+		regImm_LATCH_EN: in	std_logic; --en1
 		S1: in	std_logic; --sel A
 		S2: in	std_logic; --sel B
 		EN2: in	std_logic;
@@ -60,7 +60,7 @@ component MUX21_GENERIC is
 	Port (	
 		A:	In	std_logic_vector(NBIT-1 DOWNTO 0);
 		B:	In	std_logic_vector(NBIT-1 DOWNTO 0);
-		SEL:	In	std_logic;
+		SEL:In	std_logic;
 		Y:	Out	std_logic_vector(NBIT-1 DOWNTO 0));
 end component;
 
@@ -267,7 +267,8 @@ begin
 	----this process is used to avoid writing during nop operation, we assign '0' to wr_signal in case of nop operations
 	signal_wr: process (Ir_dec)
 	begin
-	if IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="010101" or IR_Dec="00000000000000000000000000000000"  or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101011" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="001111" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="001111" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100011" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100100" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100101" then
+	if IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="010101" or IR_Dec="00000000000000000000000000000000"  or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101011" --or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="001111" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100011" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100100" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100101" then
+	then		
 		wr_signal<='0';
 	else 
 		wr_signal<='1';
@@ -398,15 +399,6 @@ begin
 	Port Map (ALU_wb, LMD_wb, S3, OUT_data);-- sel_WB==S3
 	
 	MUX_jal: MUX21_GENERIC 
-	--MUX_jal: process (NPC_mem,OUT_data,sel_saved_reg_wb)
-	--begin
-	--if sel_saved_reg_wb='1'  then
-	--	OUT_wb<=NPC_mem;
-	--else	
-	--	OUT_wb<=OUT_data;
-	--end if;
-	--end process;
-
 	Port Map (NPC_wb, OUT_data, sel_saved_reg_wb, OUT_wb);-- saved_reg='1'-->npc else out wb
    --DTPTH_OUT<=OUT_wb;
    -- WF1 disponibile 

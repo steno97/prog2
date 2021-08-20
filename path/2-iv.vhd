@@ -11,8 +11,7 @@ end IV;
 architecture BEHAVIORAL of IV is
 
 begin
-	Y <= not(A) ; --after IVDELAY;
-	--Y <= not(A);
+	Y <= not(A) ; 
 
 end BEHAVIORAL;
 

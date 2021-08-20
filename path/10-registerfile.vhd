@@ -25,19 +25,16 @@ architecture A of register_file is
         subtype REG_ADDR is natural range 0 to numBit-1; -- using natural type
 	type REG_ARRAY is array(REG_ADDR) of std_logic_vector(numBit-1 downto 0); 
 	signal REGISTERS : REG_ARRAY; 
-	--signal out_1: std_logic_vector(numBit-1 downto 0);
-	--signal out_1: std_logic_vector(numBit-1 downto 0);
-	
+
 begin 
 	process (rd1,rd2,wr,ADD_RD1, ADD_RD2,ADD_WR)
 	--process (clk)	
 	begin
-		--if CLK'event and CLK='1' then --and enable='1' then
 		if reset='0' then
 			registers<=(OTHERS=> (others=>'0'));	
 			out1<=(others=>'0');
 			out2<=(others=>'0');
-		else --if CLK'event and CLK='1' and reset='1' then
+		else 
         	if enable='1' then
 				if wr='1'and wr_signal = '1' then
 					registers(to_integer(unsigned(add_wr)))<=datain;
@@ -64,8 +61,6 @@ begin
 end A;
 
 ----
-
-
 configuration CFG_RF_BEH of register_file is
   for A
   end for;

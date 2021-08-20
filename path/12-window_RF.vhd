@@ -25,10 +25,10 @@ entity windRF is
 		RD2: 		IN std_logic;
 		WR: 		IN std_logic; --cs for write port (active high)
 		ADD_WR: 	IN std_logic_vector(virt_addr-1 downto 0); --address of write port
-		ADD_RD1: 	IN std_logic_vector(virt_addr-1 downto 0); ---address of read port
+		ADD_RD1: 	IN std_logic_vector(virt_addr-1 downto 0); --address of read port
 		ADD_RD2: 	IN std_logic_vector(virt_addr-1 downto 0);
-		DATAIN: 	IN std_logic_vector(NBIT-1 downto 0); --write port
-		OUT1: 		OUT std_logic_vector(NBIT-1 downto 0); --read port
+		DATAIN: 	IN std_logic_vector(NBIT-1 downto 0); 	--write port
+		OUT1: 		OUT std_logic_vector(NBIT-1 downto 0); 	--read port
 		OUT2: 		OUT std_logic_vector(NBIT-1 downto 0);
 		wr_signal:  	IN std_logic
 );

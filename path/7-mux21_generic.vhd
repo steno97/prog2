@@ -21,6 +21,7 @@ architecture BEHAVIOR of MUX21_GENERIC IS
 
 end BEHAVIOR;
 
+--we implement here a multiplexer of 32bits
 ARCHITECTURE struct of MUX21_GENERIC IS
 	
 	COMPONENT mux21 
