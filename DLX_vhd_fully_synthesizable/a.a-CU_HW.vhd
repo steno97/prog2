@@ -68,8 +68,8 @@ architecture dlx_cu_hw of dlx_cu is
                                 "000000000000000", 
                                 "111010111001100", -- J (0X02) instruction encoding corresponds to the address to this ROM
                                 "111010111001111", -- JAL to be filled          
-                                "110011110001100", -- BEQZ to be filled
-                                "110011111001100", -- BNEZ                         
+                                "110011110000100", -- BEQZ to be filled
+                                "110011111000100", -- BNEZ                         
                                 "000000000000000",  -- we do not implement the bfpt instruction so we use this for the stall
                                 "000000000000000",
                                 "111010110000111", -- ADD i (0X08): FILL IT!!!
@@ -199,17 +199,7 @@ begin  -- dlx_cu_rtl
       aluOpcode2 <= NOP;
       aluOpcode3 <= NOP;
     elsif Clk'event and Clk = '1' then  -- rising clock edge
-	--we introduce this condition to be sure that while we are evaluating a 	      
-	--if jump = '1' then 
-	--	cw1 <=cw_mem(6);
-	--	iterator := iterator+1;
-	--	if iterator = 3 then
-	--		jump <= '0';
-	--		iterator :=0;
-	--	end if;
-	 --else 
 		 cw1 <= cw;
-	-- end if;
 	  
 -----------------------------------------------------------------------------	  
 	  if lhi_sel_i='1' then

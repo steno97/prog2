@@ -14,25 +14,21 @@ end load_data;
 
 architecture bhv_load of load_data is
 begin
-	load_id: process(signed_val, load_type)
+	load_id: process(data_in)
 	begin
-if load_op = '1' then 
-	if load_type = "11" then --word
-		data_out<= data_in;
-	elsif load_type= "01" then --halfword (lhu)
-	 	data_out(15 downto 0)<= data_in(15 downto 0);
-		data_out(31 downto 16)<= (others=>'0');
-	 	--if signed_val='0' then data_out(31 downto 16)<= (others=>'0');
-		--else data_out(31 downto 16)<= (others=>data_in(31));
-		--end if;
-	elsif load_type= "00" then --byte (lb e lbu)
-	 data_out(7 downto 0)<= data_in(7 downto 0);
-		if signed_val='1' then data_out(31 downto 8)<= (others=>'0');
-		else data_out(31 downto 8)<= (others=>data_in(31));
+		if load_op = '1' then 
+			if load_type = "11" then --word
+				data_out<= data_in;
+			elsif load_type= "01" then --halfword (lhu)
+	 			data_out(15 downto 0)<= data_in(15 downto 0);
+				data_out(31 downto 16)<= (others=>'0');
+			elsif load_type= "00" then --byte (lb e lbu)
+	 			data_out(7 downto 0)<= data_in(7 downto 0);
+				if signed_val='1' then data_out(31 downto 8)<= (others=>'0');
+				else data_out(31 downto 8)<= (others=>data_in(31));
+				end if;
+			else data_out<= (others=>'0');
+			end if;
 		end if;
-
-	else data_out<= (others=>'0');
-	end if;
-end if;
-		end process;
+	end process;
 end architecture;

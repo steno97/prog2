@@ -68,8 +68,8 @@ architecture dlx_cu_hw of dlx_cu is
                                 "000000000000000", 
                                 "111010111001100", -- J (0X02) instruction encoding corresponds to the address to this ROM
                                 "111010111001111", -- JAL to be filled          
-                                "110011110001100", -- BEQZ to be filled
-                                "110011111001100", -- BNEZ                         
+                                "110011110000100", -- BEQZ to be filled
+                                "110011111000100", -- BNEZ                         
                                 "000000000000000",  -- we do not implement the bfpt instruction so we use this for the stall
                                 "000000000000000",
                                 "111010110000111", -- ADD i (0X08): FILL IT!!!
@@ -96,12 +96,12 @@ architecture dlx_cu_hw of dlx_cu is
                                 "111010110000111", --SGEI (29)  
                                 "000000000000000",
                                 "000000000000000",
-                                "111010110110111", --LB
+                                "111010110010101", --LB
                                 "000000000000000",
                                 "000000000000000",
-                                "111010110110111", --LW (35)  
-                                "111010110110111", --LBU
-                                "111010110110111", --LHU
+                                "111010110010101", --LW (35)  
+                                "111010110010101", --LBU
+                                "111010110010101", --LHU
                                 "000000000000000",
                                 "000000000000000",
                                 "111110110110100", --SB
@@ -237,7 +237,6 @@ begin  -- dlx_cu_rtl
 		sb_op <= '0';
 	  end if;
 -----------------------------------------------------------------------------
-	  
 	  
 	  cw2 <= cw1(CW_SIZE - 1 - 2 downto 0);
       cw3 <= cw2(CW_SIZE - 1 - 5 downto 0);

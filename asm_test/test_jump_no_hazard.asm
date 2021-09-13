@@ -1,5 +1,5 @@
-addi r1,r0,#1
-addi r2,r0,#6
+addi r1,r0,#1	#r1=1
+addi r2,r0,#6	#r2=6
 nop
 nop
 nop
@@ -10,8 +10,8 @@ nop
 nop
 nop
 nop
-subi r2,r2,#1
-bnez r2,#-6
+subi r2,r2,#1	
+bnez r2,#-6	  	#if r2!=0 back to pc-6	
 nop
 nop
 nop

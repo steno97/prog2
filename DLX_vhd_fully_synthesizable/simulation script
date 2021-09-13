@@ -1,0 +1,43 @@
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/000-globals.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-FFD.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-generic_shifter.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-iv.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-nd2.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-reg.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.a-CU_HW.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.a-zero_evaluation.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.b-cond_eval.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.c-sign_ext.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.d-mux21.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.e-mux21_generic.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.g-ir_assigment.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.h-load_eval.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.i-registerfile.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.j-window_RF.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.k-comparator.vhdl
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu2.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.a-constants.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.b-fa.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.c-g.vhd
+vcom  -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.d-p.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.e-lfsr.vhd
+vcom - -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.f-pg.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.g-rca.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.h-csb.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.i-carry_generator.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.j-sum_gen.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.k-p4_adder.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu2.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a-DLX.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd
+vcom -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+vsim work.dlx_testbench(tb)
+add wave -position insertpoint sim:/dlx_testbench/My_DLX_Group42/DTPTH_I/*
+add wave -position insertpoint sim:/dlx_testbench/My_DLX_Group42/DRAM_EN/*
+add wave -position insertpoint sim:/dlx_testbench/My_DLX_Group42/CU_I/*
+add wave *
+run 15 ns

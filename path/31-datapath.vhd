@@ -219,7 +219,7 @@ end component;
 	signal IR_26_mem: std_logic_vector(5 downto 0);
 	--stage 4:
 	signal sel_saved_reg: std_logic;
-	signal sel_npc: std_logic;
+	signal sel_npc: std_logic:='0';
 	--pipe
 	signal ALU_wb: std_logic_vector(NBIT-1 downto 0);
 	signal NPC_wb: std_logic_vector(NBIT-1 downto 0);
@@ -237,6 +237,7 @@ end component;
 	signal wr_signal_mem: std_logic;
 	signal wr_signal_mem1: std_logic;
 	signal wr_signal_wb: std_logic;
+	signal PC_OUT_i: std_logic_vector(NBIT-1 downto 0):=(others =>'0');
 begin
 	--stage 1-> inputs: PC; outputs: NPC, IR
 	--fetch
@@ -248,7 +249,12 @@ begin
 	begin 
        NPC <= std_logic_vector(unsigned(PC_ing) + to_unsigned(1,NBIT));
     end process;
-	
+
+	-- da rimuovere in caso di problemi
+	MUX_PC1: MUX21_GENERIC 
+	Port Map (PC_out_i, NPC, sel_npc, PC_OUT);
+	--da rimuovere in caso di problemi
+	 
 	pipeline_fetch_NPC :regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>NPC_LATCH_EN, D=>NPc, Q=>NPC_fetch);
 	pipeline_fetch_PC:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>PC_ing, Q=>PC_fetch);
 	pipeline_fetch_ir:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>IR, Q=>IR_fetch);
@@ -267,7 +273,8 @@ begin
 	----this process is used to avoid writing during nop operation, we assign '0' to wr_signal in case of nop operations
 	signal_wr: process (Ir_dec)
 	begin
-	if IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="010101" or IR_Dec="00000000000000000000000000000000"  or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101011" --or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="001111" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100011" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100100" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="100101" then
+	if IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="010101" or IR_Dec="00000000000000000000000000000000"  or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101000" or IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE)="101011" 
+
 	then		
 		wr_signal<='0';
 	else 
@@ -342,15 +349,15 @@ begin
 
 	sel_npc_op: process (cond_mem, jump_en )
 	begin
-	if IR_26_mem="000010" or IR_26_mem="000011" or IR_26_mem="010010" or IR_26_mem="010010" then
-		sel_npc<='1';
-	else
-	sel_npc <= (cond_mem and jump_en);
-	end if;	
+	--if IR_26_mem="000010" or IR_26_mem="000011" or IR_26_mem="010010" or IR_26_mem="010010" then
+	--	sel_npc<='1';
+	--else
+	sel_npc <= (cond_mem or jump_en);
+	--end if;	
 	end process;
 
 	MUX_PC: MUX21_GENERIC 
-	Port Map (ALU_ex, NPC_mem, sel_npc, PC_OUT); 
+	Port Map (ALU_ex, NPC_mem, sel_npc, PC_OUT_i); 
 	--if branch taken or jump instruction-> pc =alu_out
 	
 	MUX_data_in: process (sb_op,regB_mem)
@@ -362,17 +369,37 @@ begin
 		end if;
 	end process;
 	
-	--data_memory -- guarda dov'è data memory
-	----deve entrare solo se è una store
+	--data_memory 
 	DATA_MEM_ADDR<= ALU_ex;
 	DATA_MEM_IN<= regB_in;
 	DATA_MEM_RM<=RM; --read=load op
 	DATA_MEM_WM<=WM; --write= store op
-	DATA_MEM_ENABLE<=EN3;
+	--DATA_MEM_ENABLE<=(rm or wm) ;
+	
+
+	--this process is used to set the enable to zero after 5 clock cycle 
+	proc1:process(ALU_ex,clk)
+	variable pred:std_logic_vector(NBIT-1 downto 0);
+	variable cnt:integer:=0;	
+	begin
+			if alu_ex/=pred then
+				if rising_edge(clk) then
+					cnt:=cnt+1; 
+					DATA_MEM_ENABLE<=(rm or wm);
+					if cnt=5 then
+						pred:=alu_ex;
+						cnt:=0;
+					end if;
+				end if;
+			else
+			DATA_MEM_ENABLE<='0';
+			end if;	
+	end process;
+
 
 	MUX_wr_signal: process (jump_en, wr_signal_mem,IR_26_mem)
 	begin
-	if jump_en='0' or IR_26_mem="000011" or IR_26_mem="010011"  then
+	if jump_en='0' then-- or IR_26_mem="000011" or IR_26_mem="010011"  then
 		wr_signal_mem1<=wr_signal_mem;
 	else	
 		wr_signal_mem1<='0';
