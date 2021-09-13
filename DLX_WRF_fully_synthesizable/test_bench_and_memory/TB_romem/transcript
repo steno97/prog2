@@ -1,0 +1,383 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:52:37 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# ** Error: (vcom-11) Could not find work.rocache_pkg.
+# ** Error (suppressible): /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(5): (vcom-1195) Cannot find expanded name "work.ROCACHE_PKG".
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(5): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.rwcache_pkg.
+# ** Error (suppressible): /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(6): (vcom-1195) Cannot find expanded name "work.RWCACHE_PKG".
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(6): Unknown expanded name.
+# ** Note: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(8): VHDL Compiler exiting
+# End time: 12:52:37 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:52:52 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.rocache_pkg.
+# ** Error (suppressible): /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd(4): (vcom-1195) Cannot find expanded name "work.ROCACHE_PKG".
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd(4): Unknown expanded name.
+# ** Note: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd(6): VHDL Compiler exiting
+# End time: 12:52:53 on Aug 24,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:52:54 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# ** Error: (vcom-11) Could not find work.rocache_pkg.
+# ** Error (suppressible): /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd(6): (vcom-1195) Cannot find expanded name "work.ROCACHE_PKG".
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd(6): Unknown expanded name.
+# ** Note: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd(11): VHDL Compiler exiting
+# End time: 12:52:54 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:52:58 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling package ROCACHE_PKG
+# -- Compiling package body ROCACHE_PKG
+# -- Loading package ROCACHE_PKG
+# End time: 12:52:58 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:53:00 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling package RWCACHE_PKG
+# -- Compiling package body RWCACHE_PKG
+# -- Loading package RWCACHE_PKG
+# End time: 12:53:00 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:53:05 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Compiling entity ROCACHE
+# -- Compiling architecture Behavioral of ROCACHE
+# End time: 12:53:05 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:53:06 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Compiling entity ROMEM
+# -- Compiling architecture Behavioral of ROMEM
+# End time: 12:53:06 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwcache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:53:12 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwcache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package RWCACHE_PKG
+# -- Compiling entity RWCACHE
+# -- Compiling architecture Behavioral of RWCACHE
+# End time: 12:53:12 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:53:13 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity RWMEM
+# -- Compiling architecture beh of RWMEM
+# End time: 12:53:13 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:53:17 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Loading package RWCACHE_PKG
+# -- Compiling entity DLX_TestBench
+# -- Compiling architecture tb of DLX_TestBench
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(43): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(43): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(43): Type error in range expression.
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(47): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(47): (vcom-1590) Bad expression in left operand of infix expression '-'.
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(47): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(47): Type error in range expression.
+# ** Note: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(101): VHDL Compiler exiting
+# End time: 12:53:17 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:55:18 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Loading package RWCACHE_PKG
+# -- Compiling entity DLX_TestBench
+# -- Compiling architecture tb of DLX_TestBench
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(47): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(47): (vcom-1590) Bad expression in left operand of infix expression '-'.
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(47): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(47): Type error in range expression.
+# ** Note: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(101): VHDL Compiler exiting
+# End time: 12:55:18 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 12:56:06 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Loading package RWCACHE_PKG
+# -- Compiling entity DLX_TestBench
+# -- Compiling architecture tb of DLX_TestBench
+# End time: 12:56:06 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.dlx_testbench(tb)
+# vsim work.dlx_testbench(tb) 
+# Start time: 12:56:26 on Aug 24,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(96): (vopt-3473) Component instance "/DLX_TestBench/My_DLX_Group42 : DLX" is not bound.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.rocache_pkg(body)
+# Loading work.rwcache_pkg(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dlx_testbench(tb)#1
+# ** Fatal: (vsim-3348) Port length (32) does not match actual length (64) for port "/dlx_testbench/DRAM/INOUT_DATA".
+#    Time: 0 ns  Iteration: 0  Instance: /dlx_testbench/DRAM File: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd Line: 25
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 12:56:28 on Aug 24,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 1
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 13:02:34 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling package ROCACHE_PKG
+# -- Compiling package body ROCACHE_PKG
+# -- Loading package ROCACHE_PKG
+# End time: 13:02:34 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 13:02:35 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling package RWCACHE_PKG
+# -- Compiling package body RWCACHE_PKG
+# -- Loading package RWCACHE_PKG
+# End time: 13:02:36 on Aug 24,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 13:02:40 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Compiling entity ROCACHE
+# -- Compiling architecture Behavioral of ROCACHE
+# End time: 13:02:40 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 13:02:41 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Compiling entity ROMEM
+# -- Compiling architecture Behavioral of ROMEM
+# End time: 13:02:42 on Aug 24,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwcache.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 13:02:46 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwcache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package RWCACHE_PKG
+# -- Compiling entity RWCACHE
+# -- Compiling architecture Behavioral of RWCACHE
+# End time: 13:02:46 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 13:02:47 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity RWMEM
+# -- Compiling architecture beh of RWMEM
+# End time: 13:02:47 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 13:02:50 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Loading package RWCACHE_PKG
+# -- Compiling entity DLX_TestBench
+# -- Compiling architecture tb of DLX_TestBench
+# End time: 13:02:50 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 13:02:56 on Aug 24,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package ROCACHE_PKG
+# -- Loading package RWCACHE_PKG
+# -- Compiling entity DLX_TestBench
+# -- Compiling architecture tb of DLX_TestBench
+# End time: 13:02:56 on Aug 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.dlx_testbench
+# vsim work.dlx_testbench 
+# Start time: 13:03:19 on Aug 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd(96): (vopt-3473) Component instance "/DLX_TestBench/My_DLX_Group42 : DLX" is not bound.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.rocache_pkg(body)
+# Loading work.rwcache_pkg(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dlx_testbench(tb)#1
+# ** Warning: (vsim-3473) Component instance "My_DLX_Group42 : DLX" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /dlx_testbench File: /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+# End time: 13:05:51 on Aug 24,2021, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 2

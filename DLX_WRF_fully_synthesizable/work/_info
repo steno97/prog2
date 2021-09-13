@@ -1,0 +1,2644 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable
+T_opt
+!s110 1631531011
+VPKUom4dTelWZYJQA[RVoC3
+04 13 2 work dlx_testbench tb 1
+=1-5254009c17d7-613f3002-dc58b-465c
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+Ealu
+Z1 w1631529014
+Z2 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z3 DPx4 work 7 mytypes 0 22 QQZlnJGJmgB>M;REh`cn^0
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z7 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.m-alu2.vhd
+Z8 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.m-alu2.vhd
+l0
+L7
+V1Ag@ojhYelGLm[I6jh[k;3
+!s100 CDQeegeI9^8SW<4XA4OFa1
+Z9 OL;C;10.7c;67
+32
+Z10 !s110 1631529026
+!i10b 1
+Z11 !s108 1631529026.000000
+Z12 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.m-alu2.vhd|
+Z13 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.m-alu2.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Aarchitectural
+R2
+R3
+R4
+R5
+R6
+Z16 DEx4 work 3 alu 0 22 1Ag@ojhYelGLm[I6jh[k;3
+l60
+L17
+VYS`FXg^N_8^T>=XKm8B8?0
+!s100 n>5Y?JV4V;08Gcf[:L^Bd2
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ecarry_generator
+Z17 w1623574225
+R4
+Z18 DPx4 work 9 constants 0 22 O0H1:YdFCFIdkMFbBM:BG0
+R2
+Z19 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z20 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R5
+R6
+R0
+Z21 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.i-carry_generator.vhd
+Z22 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.i-carry_generator.vhd
+l0
+L8
+V1HH@Vac5i;an04XIY2<I62
+!s100 jl9U9o<gi1`7WAI6`DWH^1
+R9
+32
+Z23 !s110 1631266620
+!i10b 1
+Z24 !s108 1631266620.000000
+Z25 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.i-carry_generator.vhd|
+Z26 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.i-carry_generator.vhd|
+!i113 0
+R14
+R15
+Aarch
+R4
+R18
+R2
+R19
+R20
+R5
+R6
+Z27 DEx4 work 15 carry_generator 0 22 1HH@Vac5i;an04XIY2<I62
+l45
+L19
+VcW[5ABnY0Gz7o<UZ7g1YM0
+!s100 5IeIIeE3@OdXB7?<];>m30
+R9
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R14
+R15
+Ccfg_alu_architectural
+eALU
+aArchitectural
+R19
+R20
+R18
+Z28 DEx4 work 8 p4_adder 0 22 eEYO0[5[QRdG0WI1hiLnJ2
+Z29 DEx4 work 15 shifter_generic 0 22 o30e@[]ZY=3mOnhd7Oaa60
+Z30 DEx4 work 10 comparator 0 22 b;3Q?2X?SDMcaYHWgR>S23
+DAx4 work 3 alu 13 architectural 22 YS`FXg^N_8^T>=XKm8B8?0
+R2
+R3
+R4
+R5
+R6
+R16
+R1
+R0
+R7
+R8
+l0
+L224
+VD;Ai98d7kf_oBToH7:BQA3
+!s100 :lC1WZBVCn;HB:2]WTTbF0
+R9
+32
+R10
+!i10b 0
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ccfg_carry_generator_arch
+eCARRY_GENERATOR
+Z31 aarch
+Z32 DEx4 work 2 pg 0 22 oGI;;mR[C:??1I3Yob^c`1
+Z33 DEx4 work 1 g 0 22 2LDlh@^MnWOMm=h6j1jKe1
+DCx4 work 11 cfg_pg_arch 0 22 SEdbHP4bmJeAAaS7i@djO1
+Z34 DCx4 work 12 cfg_g_behave 0 22 9e0O1ala8ch[?oncYOWGD3
+DAx4 work 15 carry_generator 4 arch 22 cW[5ABnY0Gz7o<UZ7g1YM0
+R4
+R18
+R2
+R19
+R20
+R5
+R6
+R27
+R17
+R0
+R21
+R22
+l0
+L113
+VME4MMdL@IzO7N;NRJzKXJ3
+!s100 jCg::jLkFU1zI;`E9Q4_53
+R9
+32
+R23
+!i10b 0
+R24
+R25
+R26
+!i113 0
+R14
+R15
+Ccfg_csb_structural
+eCSB
+Z35 aSTRUCTURAL
+Z36 DEx4 work 13 mux21_generic 0 22 CX^^k4Hzi94MG?LVc<PQR2
+Z37 DEx4 work 3 rca 0 22 :m@J^XQP65BC6H6h;fXX:1
+DCx4 work 18 cfg_rca_structural 0 22 31k=QX]nDG5I4`2imlg6]3
+R2
+R3
+DCx4 work 24 cfg_mux21_gen_structural 0 22 ]CT0a_BBOzInFZed3a8Yi1
+DAx4 work 3 csb 10 structural 22 YMb:bB3=SiZn?`V[jI2k93
+R18
+R19
+R20
+R5
+R6
+Z38 DEx4 work 3 csb 0 22 123@4[aI6POU8?nZ861NQ0
+R17
+R0
+Z39 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.h-csb.vhd
+Z40 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.h-csb.vhd
+l0
+L54
+V0bTFI_c7HQ^QM]4JG9hf`2
+!s100 gjlOHoMDlMTM<d@7gE^]J1
+R9
+32
+Z41 !s110 1631266619
+!i10b 0
+Z42 !s108 1631266618.000000
+Z43 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.h-csb.vhd|
+Z44 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.h-csb.vhd|
+!i113 0
+R14
+R15
+Ccfg_fa_behavioral
+eFA
+Z45 aBEHAVIORAL
+DAx4 work 2 fa 10 behavioral 22 >bf:HNN[:CLYT:=N`7VL41
+R5
+R6
+Z46 DEx4 work 2 fa 0 22 OFXVSEjbAn0=QENajA>=>3
+R17
+R0
+Z47 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.b-fa.vhd
+Z48 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.b-fa.vhd
+l0
+L23
+VO[a:jJM7TTEF7TLcK3<T82
+!s100 9mJ7fl0LR3WT:55Gi]JFk0
+R9
+32
+Z49 !s110 1631266611
+!i10b 0
+Z50 !s108 1631266611.000000
+Z51 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.b-fa.vhd|
+Z52 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.b-fa.vhd|
+!i113 0
+R14
+R15
+Ccfg_fd_async
+Z53 eregFFD
+aASYNCHBEHAV
+DAx4 work 6 regffd 11 asynchbehav 22 _7S;iEoY]nd3^`fbic`XJ2
+R2
+R3
+R19
+R5
+R6
+Z54 DEx4 work 6 regffd 0 22 CYeG0Z:P]cTAUn]D0zkdo0
+Z55 w1626171937
+R0
+Z56 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-reg.vhd
+Z57 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-reg.vhd
+l0
+L67
+VNbTaV]zc<jnn8NV]iz2;i0
+!s100 H:VNHNC7:N;[d36mThZeA3
+R9
+32
+Z58 !s110 1631266602
+!i10b 0
+Z59 !s108 1631266602.000000
+Z60 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-reg.vhd|
+Z61 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-reg.vhd|
+!i113 0
+R14
+R15
+Ccfg_fd_sync
+R53
+aSYNCBEHAV
+DAx4 work 6 regffd 9 syncbehav 22 Po8kAB<Te^S[E:HgU?e:m1
+R2
+R3
+R19
+R5
+R6
+R54
+R55
+R0
+R56
+R57
+l0
+L61
+V3^jHI[GdDVCgG`A1>[5mb2
+!s100 5UQz02AG```W3aOL5L:WS0
+R9
+32
+R58
+!i10b 0
+R59
+R60
+R61
+!i113 0
+R14
+R15
+Ccfg_ffd_async
+eFF
+aASYNCH_BHV
+DAx4 work 2 ff 10 asynch_bhv 22 ?6lAM6e^OQVSjZCc2>j<63
+R5
+R6
+Z62 DEx4 work 2 ff 0 22 ViOY7T7TiLGmmEW^Q?YP>0
+Z63 w1626171975
+R0
+Z64 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-FFD.vhd
+Z65 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-FFD.vhd
+l0
+L50
+VnJLO=bmLoDj>_WECDSGU63
+!s100 zL>0eFoX5Pl;o4D6K4G5Z0
+R9
+32
+Z66 !s110 1631266601
+!i10b 0
+Z67 !s108 1631266601.000000
+Z68 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-FFD.vhd|
+Z69 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-FFD.vhd|
+!i113 0
+R14
+R15
+Ccfg_ffd_sync
+eFF
+aSYNC_BHV
+DAx4 work 2 ff 8 sync_bhv 22 ?mUIbR<Ck@P@`Em95R3iz1
+R5
+R6
+R62
+R63
+R0
+R64
+R65
+l0
+L44
+VP[_8FVId_j<Xlo?Tg^eW;1
+!s100 cJCN]?7PSK3VVfSGjJ6VM1
+R9
+32
+R66
+!i10b 0
+R67
+R68
+R69
+!i113 0
+R14
+R15
+Ccfg_g_behave
+eG
+Z70 abehave
+DAx4 work 1 g 6 behave 22 Iz^D60mUCj_SJCRoil8T_2
+R19
+R20
+R5
+R6
+R33
+R17
+R0
+Z71 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.c-g.vhd
+Z72 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.c-g.vhd
+l0
+L21
+V9e0O1ala8ch[?oncYOWGD3
+!s100 hfkzI4kOgh6`z1`^mfCI33
+R9
+32
+Z73 !s110 1631266612
+!i10b 0
+Z74 !s108 1631266612.000000
+Z75 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.c-g.vhd|
+Z76 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.c-g.vhd|
+!i113 0
+R14
+R15
+Ccfg_iv_behavioral
+eIV
+R45
+DAx4 work 2 iv 10 behavioral 22 AMM;ZMO8[9TMM]<WiJl<c3
+R2
+R3
+R5
+R6
+Z77 DEx4 work 2 iv 0 22 A?T_XfQ98LONS8Ki5POiI0
+Z78 w1629444276
+R0
+Z79 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-iv.vhd
+Z80 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-iv.vhd
+l0
+L18
+Vz^]Uh[WPOKDT]ORWl=>H13
+!s100 ^@a[iU`fR5ae_z[g@_BL^1
+R9
+32
+Z81 !s110 1631266597
+!i10b 0
+Z82 !s108 1631266597.000000
+Z83 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-iv.vhd|
+Z84 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-iv.vhd|
+!i113 0
+R14
+R15
+Ccfg_mux21_behavioral_1
+Z85 eMUX21
+aBEHAVIORAL_1
+DAx4 work 5 mux21 12 behavioral_1 22 ;d9W95bYVCX>MMVSXfVzV3
+R2
+R3
+R5
+R6
+Z86 DEx4 work 5 mux21 0 22 <ObZa<I^8kJ:L;VhgkzK`2
+Z87 w1625239703
+R0
+Z88 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.d-mux21.vhd
+Z89 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.d-mux21.vhd
+l0
+L83
+VlfVUR^?8^F<U][E_[aU>L3
+!s100 N<SV[43h4J[4SVS[2=kYF2
+R9
+32
+Z90 !s110 1631266629
+!i10b 0
+Z91 !s108 1631266629.000000
+Z92 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.d-mux21.vhd|
+Z93 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.d-mux21.vhd|
+!i113 0
+R14
+R15
+Ccfg_mux21_behavioral_2
+R85
+aBEHAVIORAL_2
+DAx4 work 5 mux21 12 behavioral_2 22 ZIL@<1ennI>5H3FieaPl03
+R2
+R3
+R5
+R6
+R86
+R87
+R0
+R88
+R89
+l0
+L88
+V9^l9z@l^SR9BC=djhgLo=2
+!s100 YbFM7Ko]Mh=[0;4zYlm1[3
+R9
+32
+R90
+!i10b 0
+R91
+R92
+R93
+!i113 0
+R14
+R15
+Ccfg_mux21_behavioral_3
+R85
+aBEHAVIORAL_3
+DAx4 work 5 mux21 12 behavioral_3 22 E;iQdb2NzN^:I^gl^?1OU0
+R2
+R3
+R5
+R6
+R86
+R87
+R0
+R88
+R89
+l0
+L93
+VSI=AT<UNzo=lOEo2GOM830
+!s100 X=8]aSPcdB`V_ZX1PGn>l2
+R9
+32
+R90
+!i10b 0
+R91
+R92
+R93
+!i113 0
+R14
+R15
+Ccfg_mux21_gen_behavioral
+Z94 eMUX21_GENERIC
+aBEHAVIOR
+DAx4 work 13 mux21_generic 8 behavior 22 VQVn3^^7F8GVVklzXnQRB3
+R2
+R3
+R19
+R20
+R5
+R6
+R36
+Z95 w1629446262
+R0
+Z96 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.e-mux21_generic.vhd
+Z97 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.e-mux21_generic.vhd
+l0
+L42
+VMJDNSz^k^0I<d6[Od2?K<3
+!s100 3OO;Fmz?hR:?lNN;S5Q[j3
+R9
+32
+Z98 !s110 1631266630
+!i10b 0
+Z99 !s108 1631266630.000000
+Z100 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.e-mux21_generic.vhd|
+Z101 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.e-mux21_generic.vhd|
+!i113 0
+R14
+R15
+Ccfg_mux21_gen_structural
+R94
+astruct
+R86
+DCx4 work 20 cfg_mux21_structural 0 22 J>9PV_9BkO_bWSH7HP5k<2
+DAx4 work 13 mux21_generic 6 struct 22 Bb89zJ?m7Jk^K6BTbYMH`0
+R2
+R3
+R19
+R20
+R5
+R6
+R36
+R95
+R0
+R96
+R97
+l0
+L49
+V]CT0a_BBOzInFZed3a8Yi1
+!s100 2JR8omGfPC[T0c2UF;Z2H3
+R9
+32
+R98
+!i10b 0
+R99
+R100
+R101
+!i113 0
+R14
+R15
+Ccfg_mux21_structural
+R85
+R35
+Z102 DEx4 work 3 nd2 0 22 `0Jhk2N]e:_[o;:R?PYTH0
+R77
+DCx4 work 13 cfg_nd2_arch2 0 22 o]7?=fm<4cd`YVJS_[@Kn1
+DCx4 work 17 cfg_iv_behavioral 0 22 z^]Uh[WPOKDT]ORWl=>H13
+DAx4 work 5 mux21 10 structural 22 5Y5zW=RH==Wc8GTf5?Jk42
+R2
+R3
+R5
+R6
+R86
+R87
+R0
+R88
+R89
+l0
+L98
+VJ>9PV_9BkO_bWSH7HP5k<2
+!s100 Ka:iYN0MgV9mVY2=5T_gj0
+R9
+32
+R90
+!i10b 0
+R91
+R92
+R93
+!i113 0
+R14
+R15
+Ccfg_nd2_arch1
+eND2
+aARCH1
+DAx4 work 3 nd2 5 arch1 22 lN^FK2Czz9K6dlcL>bP082
+R2
+R3
+R5
+R6
+R102
+Z103 w1629445592
+R0
+Z104 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-nd2.vhd
+Z105 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-nd2.vhd
+l0
+L34
+Vl6_HCQ?>`zieCY;d54dio3
+!s100 30JK7FDVUeo7da918oZA?0
+R9
+32
+Z106 !s110 1631266599
+!i10b 0
+Z107 !s108 1631266599.000000
+Z108 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-nd2.vhd|
+Z109 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-nd2.vhd|
+!i113 0
+R14
+R15
+Ccfg_nd2_arch2
+eND2
+aARCH2
+DAx4 work 3 nd2 5 arch2 22 hDMNAH]>^G2HijI5OgFAO2
+R2
+R3
+R5
+R6
+R102
+R103
+R0
+R104
+R105
+l0
+L39
+Vo]7?=fm<4cd`YVJS_[@Kn1
+!s100 1526h=k@g9GV3MVa?2f_32
+R9
+32
+R106
+!i10b 0
+R107
+R108
+R109
+!i113 0
+R14
+R15
+Ccfg_p4_adder
+eP4_ADDER
+R35
+Z110 DEx4 work 13 sum_generator 0 22 ziSDZ05Wa9><dhTl;Z1A;3
+R27
+DCx4 work 28 cfg_sum_generator_structural 0 22 l>bk?k?jJ]92349>OzElP2
+R4
+R2
+DCx4 work 24 cfg_carry_generator_arch 0 22 ME4MMdL@IzO7N;NRJzKXJ3
+DAx4 work 8 p4_adder 10 structural 22 BcBgCGA>CM@Y^n>UA52fG2
+R18
+R19
+R20
+R5
+R6
+R28
+R17
+R0
+Z111 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.k-p4_adder.vhd
+Z112 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.k-p4_adder.vhd
+l0
+L62
+Vja<9amjoRT2_0YlBE8;[a3
+!s100 53nGMB=V41KYJKD@I8JBG0
+R9
+32
+Z113 !s110 1631266622
+!i10b 0
+Z114 !s108 1631266622.000000
+Z115 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.k-p4_adder.vhd|
+Z116 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.k-p4_adder.vhd|
+!i113 0
+R14
+R15
+Ccfg_p_behavioral
+eP
+R70
+DAx4 work 1 p 6 behave 22 OXSE4o8JMHKhF2Efm`^`52
+R19
+R20
+R5
+R6
+Z117 DEx4 work 1 p 0 22 7:b]>UWl9T`f:2d0_PafW1
+R17
+R0
+Z118 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.d-p.vhd
+Z119 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.d-p.vhd
+l0
+L19
+V4z418LYaWQ3LaZE:>L]zF2
+!s100 Sa_61dbJK`flfXYgh0KP_1
+R9
+32
+Z120 !s110 1631266613
+!i10b 0
+Z121 !s108 1631266613.000000
+Z122 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.d-p.vhd|
+Z123 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.d-p.vhd|
+!i113 0
+R14
+R15
+Ccfg_pg_arch
+ePG
+R31
+R117
+R33
+R34
+DCx4 work 16 cfg_p_behavioral 0 22 4z418LYaWQ3LaZE:>L]zF2
+DAx4 work 2 pg 4 arch 22 9zjJL;=R?g8J_Xo@ldGm]1
+R19
+R20
+R5
+R6
+R32
+R17
+R0
+Z124 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.f-pg.vhd
+Z125 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.f-pg.vhd
+l0
+L37
+VSEdbHP4bmJeAAaS7i@djO1
+!s100 KSzi:0]k4TLd5>6aB44<<0
+R9
+32
+Z126 !s110 1631266615
+!i10b 0
+Z127 !s108 1631266615.000000
+Z128 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.f-pg.vhd|
+Z129 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.f-pg.vhd|
+!i113 0
+R14
+R15
+Ccfg_rca_behavioral
+eRCA
+R45
+DAx4 work 3 rca 10 behavioral 22 d2R;[TZk8nbONBIA7CbW>1
+R18
+R19
+R20
+R5
+R6
+R37
+R17
+R0
+Z130 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.g-rca.vhd
+Z131 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.g-rca.vhd
+l0
+L68
+VULI>JO@OATz?aMaV2lbG@3
+!s100 Q7FQMI9`;@FOghhTYIMSi0
+R9
+32
+Z132 !s110 1631266616
+!i10b 0
+Z133 !s108 1631266616.000000
+Z134 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.g-rca.vhd|
+Z135 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.g-rca.vhd|
+!i113 0
+R14
+R15
+Ccfg_rca_structural
+eRCA
+R35
+R46
+DCx4 work 17 cfg_fa_behavioral 0 22 O[a:jJM7TTEF7TLcK3<T82
+DAx4 work 3 rca 10 structural 22 kAMBATKNz7B:`33KYI_:82
+R18
+R19
+R20
+R5
+R6
+R37
+R17
+R0
+R130
+R131
+l0
+L58
+V31k=QX]nDG5I4`2imlg6]3
+!s100 QR5mG8WLB[cYbMG1L7zTT2
+R9
+32
+R132
+!i10b 0
+R133
+R134
+R135
+!i113 0
+R14
+R15
+Ccfg_rf_beh
+eregister_file
+aA
+DAx4 work 13 register_file 1 a 22 WJ8oM:i:4j1RXj]2gIK0:0
+R2
+R3
+R4
+R19
+R20
+R5
+R6
+Z136 DEx4 work 13 register_file 0 22 [Vg@B`_cZC]Lif]F[OmJ40
+Z137 w1629447064
+R0
+Z138 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.i-registerfile.vhd
+Z139 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.i-registerfile.vhd
+l0
+L64
+VO6M`f;H=J:V^ghBfPLC0U3
+!s100 X1]3TJXlPMYgbAO?Tb03O1
+R9
+32
+Z140 !s110 1631266634
+!i10b 0
+Z141 !s108 1631266634.000000
+Z142 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.i-registerfile.vhd|
+Z143 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.i-registerfile.vhd|
+!i113 0
+R14
+R15
+Ccfg_sum_generator_structural
+eSUM_GENERATOR
+R35
+R38
+DCx4 work 18 cfg_csb_structural 0 22 0bTFI_c7HQ^QM]4JG9hf`2
+DAx4 work 13 sum_generator 10 structural 22 WIj_5dCcHWVXAMZKAmjOE2
+R18
+R19
+R20
+R5
+R6
+R110
+Z144 w1625850204
+R0
+Z145 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.j-sum_gen.vhd
+Z146 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.j-sum_gen.vhd
+l0
+L41
+Vl>bk?k?jJ]92349>OzElP2
+!s100 :FCKMjZV>aJ2Akl2E>idY1
+R9
+32
+Z147 !s110 1631266621
+!i10b 0
+Z148 !s108 1631266621.000000
+Z149 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.j-sum_gen.vhd|
+Z150 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.j-sum_gen.vhd|
+!i113 0
+R14
+R15
+Ccfg_windrf_bhv
+ewindRF
+abhv
+DAx4 work 6 windrf 3 bhv 22 1@`GjZXa;WBkiV6@g8XKW0
+R2
+R3
+R4
+R5
+R6
+Z151 DEx4 work 6 windrf 0 22 M3OCJ39T1hh5_5m6GBoKh2
+Z152 w1629447208
+R0
+Z153 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.j-window_RF.vhd
+Z154 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.j-window_RF.vhd
+l0
+L193
+Vn=VU;F[:IGY4kCm5m4mSb1
+!s100 1[M=_4M8LTVA8:>ClKRP[1
+R9
+32
+Z155 !s110 1631266637
+!i10b 0
+Z156 !s108 1631266637.000000
+Z157 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.j-window_RF.vhd|
+Z158 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.j-window_RF.vhd|
+!i113 0
+R14
+R15
+Ecomparator
+Z159 w1628327695
+R19
+R2
+R3
+R5
+R6
+R0
+Z160 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.k-comparator.vhdl
+Z161 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.k-comparator.vhdl
+l0
+L8
+Vb;3Q?2X?SDMcaYHWgR>S23
+!s100 U[P>gIjh1Fh9iE:6f3Q`^0
+R9
+32
+Z162 !s110 1631266638
+!i10b 1
+Z163 !s108 1631266638.000000
+Z164 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.k-comparator.vhdl|
+Z165 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.k-comparator.vhdl|
+!i113 0
+R14
+R15
+Aarchitectural
+R19
+R2
+R3
+R5
+R6
+R30
+l21
+L15
+V6P=fVz^jM9^GG2OcT58VU1
+!s100 ciEVXmIO4Qz9@KEk]JizG2
+R9
+32
+R162
+!i10b 1
+R163
+R164
+R165
+!i113 0
+R14
+R15
+Econd_bt
+Z166 w1631034132
+R2
+R3
+R19
+R5
+R6
+R0
+Z167 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.b-cond_eval.vhd
+Z168 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.b-cond_eval.vhd
+l0
+L6
+V@CmfDeYTegj;TPk:z8RL:2
+!s100 ^I1K9VOTTieK?18TZAP<A0
+R9
+32
+Z169 !s110 1631266626
+!i10b 1
+Z170 !s108 1631266626.000000
+Z171 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.b-cond_eval.vhd|
+Z172 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.b-cond_eval.vhd|
+!i113 0
+R14
+R15
+Abhv
+R2
+R3
+R19
+R5
+R6
+DEx4 work 7 cond_bt 0 22 @CmfDeYTegj;TPk:z8RL:2
+l30
+L16
+ViVAf?gOWd[XN49JHW16M]1
+!s100 meN>CdR=5;;TU2zn8>G2>1
+R9
+32
+R169
+!i10b 1
+R170
+R171
+R172
+!i113 0
+R14
+R15
+Pconstants
+R17
+R0
+8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.a-constants.vhd
+F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.a-constants.vhd
+l0
+L1
+VO0H1:YdFCFIdkMFbBM:BG0
+!s100 :Y1Pz@ab6]VeZlYA`2OkW3
+R9
+32
+!s110 1631266609
+!i10b 1
+!s108 1631266609.000000
+!s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.a-constants.vhd|
+!s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.a-constants.vhd|
+!i113 0
+R14
+R15
+Ecsb
+R17
+R18
+R19
+R20
+R5
+R6
+R0
+R39
+R40
+l0
+L10
+V123@4[aI6POU8?nZ861NQ0
+!s100 K<h;0P8`kZzVf`1aOBH;i2
+R9
+32
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 0
+R14
+R15
+Astructural
+R18
+R19
+R20
+R5
+R6
+R38
+l38
+L18
+VYMb:bB3=SiZn?`V[jI2k93
+!s100 9zXhgT_dXhD>_j]^`@>Un0
+R9
+32
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 0
+R14
+R15
+Edatapth
+Z173 w1631530990
+R4
+R2
+R3
+R5
+R6
+R0
+Z174 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.vhd
+Z175 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.vhd
+l0
+L12
+V7DzLd[I;gEg2mgE>^=Ec01
+!s100 c07g=J0KW9D5=kPA^VB[S3
+R9
+32
+Z176 !s110 1631530994
+!i10b 1
+Z177 !s108 1631530994.000000
+Z178 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.vhd|
+Z179 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R2
+R3
+R5
+R6
+DEx4 work 7 datapth 0 22 7DzLd[I;gEg2mgE>^=Ec01
+l245
+L54
+V8kD>EN_8Ul:`?eQD967X80
+!s100 :moXc1=L7dN?CL;[R8V:D0
+R9
+32
+R176
+!i10b 1
+R177
+R178
+R179
+!i113 0
+R14
+R15
+Edlx
+Z180 w1630954481
+Z181 DPx4 work 11 rwcache_pkg 0 22 6oR2bO6jC=Z7dldi?:gVm3
+Z182 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z183 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+R19
+Z184 DPx4 work 11 rocache_pkg 0 22 Nl2m9F3]_gX9ano[EdeZa1
+R2
+R3
+R5
+R6
+R0
+Z185 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a-DLX.vhd
+Z186 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a-DLX.vhd
+l0
+L10
+VCBCkVJBXPQPn?^KM^h:mF0
+!s100 8?IK^l5:VRR6laX1M8]Fb2
+R9
+32
+Z187 !s110 1631530996
+!i10b 1
+Z188 !s108 1631530996.000000
+Z189 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a-DLX.vhd|
+Z190 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a-DLX.vhd|
+!i113 0
+R14
+R15
+Adlx_rtl
+R181
+R182
+R183
+R19
+R184
+R2
+R3
+R5
+R6
+DEx4 work 3 dlx 0 22 CBCkVJBXPQPn?^KM^h:mF0
+l219
+L40
+VPb^E;7B6eKTLW46B]n4Kd3
+!s100 D]Fe_IVzzPPQITiWD0L041
+R9
+32
+R187
+!i10b 1
+R188
+R189
+R190
+!i113 0
+R14
+R15
+Edlx_cu
+Z191 w1631517831
+R2
+R3
+R19
+R5
+R6
+R0
+Z192 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.a-CU_HW.vhd
+Z193 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.a-CU_HW.vhd
+l0
+L9
+VNMz;3NET02oY_oc5ACn]C1
+!s100 5XLf^eb??H2bKWHkciEXc0
+R9
+32
+Z194 !s110 1631529030
+!i10b 1
+Z195 !s108 1631529030.000000
+Z196 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.a-CU_HW.vhd|
+Z197 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.a-CU_HW.vhd|
+!i113 0
+R14
+R15
+Adlx_cu_hw
+R2
+R3
+R19
+R5
+R6
+DEx4 work 6 dlx_cu 0 22 NMz;3NET02oY_oc5ACn]C1
+l155
+L65
+V6elX07]U<NF]aS:W7GmLD0
+!s100 KXOl5U2:E[S;bLNJ@z86Q1
+R9
+32
+R194
+!i10b 1
+R195
+R196
+R197
+!i113 0
+R14
+R15
+Edlx_testbench
+Z198 w1630955754
+R2
+R3
+R181
+R182
+R183
+R184
+R19
+R20
+R5
+R6
+R0
+Z199 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+Z200 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd
+l0
+L8
+V?TC96_SPN86>9b7_PD@Gk3
+!s100 =eXEj@>W^e5?Wh]FJk5U:1
+R9
+32
+Z201 !s110 1631530998
+!i10b 1
+Z202 !s108 1631530998.000000
+Z203 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd|
+Z204 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_TOP_DLX.vhd|
+!i113 0
+R14
+R15
+Atb
+R2
+R3
+R181
+R182
+R183
+R184
+R19
+R20
+R5
+R6
+DEx4 work 13 dlx_testbench 0 22 ?TC96_SPN86>9b7_PD@Gk3
+l84
+L11
+VnL6M[iQ_XbO4Dmh[6h]7J3
+!s100 hlGDd5ZDKF@C^<`LT;m_S2
+R9
+32
+R201
+!i10b 1
+R202
+R203
+R204
+!i113 0
+R14
+R15
+Efa
+R17
+R5
+R6
+R0
+R47
+R48
+l0
+L4
+VOFXVSEjbAn0=QENajA>=>3
+!s100 @cFYULkO[eT>zEBa4P<i:1
+R9
+32
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R14
+R15
+Abehavioral
+R5
+R6
+R46
+l16
+L14
+V>bf:HNN[:CLYT:=N`7VL41
+!s100 PaEj@A0N=?54oe@lL5MVL2
+R9
+32
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R14
+R15
+Eff
+R63
+R5
+R6
+R0
+R64
+R65
+l0
+L4
+VViOY7T7TiLGmmEW^Q?YP>0
+!s100 lJG5kX]LaDz5VNj9l`0A]2
+R9
+32
+R66
+!i10b 1
+R67
+R68
+R69
+!i113 0
+R14
+R15
+Async_bhv
+R5
+R6
+R62
+l28
+L27
+V?mUIbR<Ck@P@`Em95R3iz1
+!s100 Ti4A8NXbCoEa[kJ@ijZ]Q3
+R9
+32
+R66
+!i10b 1
+R67
+R68
+R69
+!i113 0
+R14
+R15
+Aasynch_bhv
+R5
+R6
+R62
+l12
+L11
+V?6lAM6e^OQVSjZCc2>j<63
+!s100 m>9SoIgJBW]o@jJcY`Qkn0
+R9
+32
+R66
+!i10b 1
+R67
+R68
+R69
+!i113 0
+R14
+R15
+Eg
+R17
+R19
+R20
+R5
+R6
+R0
+R71
+R72
+l0
+L6
+V2LDlh@^MnWOMm=h6j1jKe1
+!s100 ;FB>IMaIL[ZY2enNYJ0N[2
+R9
+32
+R73
+!i10b 1
+R74
+R75
+R76
+!i113 0
+R14
+R15
+Abehave
+R19
+R20
+R5
+R6
+R33
+l16
+L15
+VIz^D60mUCj_SJCRoil8T_2
+!s100 zR5=PNU2[SYi?;AJ[=S;H1
+R9
+32
+R73
+!i10b 1
+R74
+R75
+R76
+!i113 0
+R14
+R15
+Eir_decode
+Z205 w1629446962
+R2
+R3
+R19
+R5
+R6
+R0
+Z206 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.g-ir_assigment.vhd
+Z207 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.g-ir_assigment.vhd
+l0
+L6
+VLLYckCzDbcMV3EKYY9WNV3
+!s100 ]f1UWGXcI8@`K83aV0B0O0
+R9
+32
+Z208 !s110 1631266631
+!i10b 1
+Z209 !s108 1631266631.000000
+Z210 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.g-ir_assigment.vhd|
+Z211 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.g-ir_assigment.vhd|
+!i113 0
+R14
+R15
+Abehav
+R2
+R3
+R19
+R5
+R6
+DEx4 work 9 ir_decode 0 22 LLYckCzDbcMV3EKYY9WNV3
+l49
+L24
+VE^C?JEKb]6FaIIn2Az:Ic0
+!s100 ^7WKU=h_AO<zTUTo9<3VS3
+R9
+32
+R208
+!i10b 1
+R209
+R210
+R211
+!i113 0
+R14
+R15
+Eiv
+R78
+R2
+R3
+R5
+R6
+R0
+R79
+R80
+l0
+L5
+VA?T_XfQ98LONS8Ki5POiI0
+!s100 di@CHNVzOj=deLlnMz49>2
+R9
+32
+R81
+!i10b 1
+R82
+R83
+R84
+!i113 0
+R14
+R15
+Abehavioral
+R2
+R3
+R5
+R6
+R77
+l13
+L11
+VAMM;ZMO8[9TMM]<WiJl<c3
+!s100 3Ff6d@Ic37Wz1TTAo:4XJ2
+R9
+32
+R81
+!i10b 1
+R82
+R83
+R84
+!i113 0
+R14
+R15
+Elfsr16
+R17
+R19
+R5
+R6
+R0
+Z212 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.e-lfsr.vhd
+Z213 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.e-lfsr.vhd
+l0
+L6
+V?NiPZdG9n;2@objYfbGWA3
+!s100 L[m8V_6C>;0ScP9MX`Wi11
+R9
+32
+Z214 !s110 1631266614
+!i10b 1
+Z215 !s108 1631266614.000000
+Z216 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.e-lfsr.vhd|
+Z217 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-alu.core/a.b.l.e-lfsr.vhd|
+!i113 0
+R14
+R15
+Artl
+R19
+R5
+R6
+DEx4 work 6 lfsr16 0 22 ?NiPZdG9n;2@objYfbGWA3
+l19
+L17
+VnZbPa@87ffdiXdl0QYic^3
+!s100 Zd7^eezldY<`n>c8T4VN10
+R9
+32
+R214
+!i10b 1
+R215
+R216
+R217
+!i113 0
+R14
+R15
+Eload_data
+Z218 w1630954403
+R4
+R2
+R3
+R5
+R6
+R0
+Z219 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.h-load_eval.vhd
+Z220 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.h-load_eval.vhd
+l0
+L6
+VLDeH>Un1[IbYESoN5b>I62
+!s100 G@i<<fg6Fb]NE?R6Xn7<g2
+R9
+32
+Z221 !s110 1631266632
+!i10b 1
+Z222 !s108 1631266632.000000
+Z223 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.h-load_eval.vhd|
+Z224 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.h-load_eval.vhd|
+!i113 0
+R14
+R15
+Abhv_load
+R4
+R2
+R3
+R5
+R6
+DEx4 work 9 load_data 0 22 LDeH>Un1[IbYESoN5b>I62
+l16
+L15
+V9hg:n1AkYPM4i<LJ4RViA2
+!s100 RoUcTgz8>]A144f:LVhmF3
+R9
+32
+R221
+!i10b 1
+R222
+R223
+R224
+!i113 0
+R14
+R15
+Elogic
+Z225 w1631523747
+R2
+R3
+R4
+R5
+R6
+R0
+Z226 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-logic.vhd
+Z227 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-logic.vhd
+l0
+L7
+VO<RBEV<eF;``1l`k?YWBT3
+!s100 TF@:Plg7EZ2jdEZz^L05m0
+R9
+32
+Z228 !s110 1631523752
+!i10b 1
+Z229 !s108 1631523752.000000
+Z230 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-logic.vhd|
+Z231 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.l-logic.vhd|
+!i113 0
+R14
+R15
+Aarchitectural
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 logic 0 22 O<RBEV<eF;``1l`k?YWBT3
+l19
+L16
+VeGN4A>Un=O:Z;]:0iUKQe1
+!s100 RiCII65;9klhOSAz[bf351
+R9
+32
+R228
+!i10b 1
+R229
+R230
+R231
+!i113 0
+R14
+R15
+Emux21
+R87
+R2
+R3
+R5
+R6
+R0
+R88
+R89
+l0
+L5
+V<ObZa<I^8kJ:L;VhgkzK`2
+!s100 7?BlCTO[03WW]WIck_c3M3
+R9
+32
+R90
+!i10b 1
+R91
+R92
+R93
+!i113 0
+R14
+R15
+Astructural
+R2
+R3
+R5
+R6
+R86
+l65
+L46
+V5Y5zW=RH==Wc8GTf5?Jk42
+!s100 2W<io5nl3hB;lNj_i8I9e0
+R9
+32
+R90
+!i10b 1
+R91
+R92
+R93
+!i113 0
+R14
+R15
+Abehavioral_3
+R2
+R3
+R5
+R6
+R86
+l31
+L29
+VE;iQdb2NzN^:I^gl^?1OU0
+!s100 H`fomV559ELnDKzgmX`0:1
+R9
+32
+R90
+!i10b 1
+R91
+R92
+R93
+!i113 0
+R14
+R15
+Abehavioral_2
+R2
+R3
+R5
+R6
+R86
+l23
+L21
+VZIL@<1ennI>5H3FieaPl03
+!s100 >12;bKH`aAKmECeOFBXJ]1
+R9
+32
+R90
+!i10b 1
+R91
+R92
+R93
+!i113 0
+R14
+R15
+Abehavioral_1
+R2
+R3
+R5
+R6
+R86
+l15
+L13
+V;d9W95bYVCX>MMVSXfVzV3
+!s100 ghVEL:7]j]:CiG[ai`UZn3
+R9
+32
+R90
+!i10b 1
+R91
+R92
+R93
+!i113 0
+R14
+R15
+Emux21_generic
+R95
+R2
+R3
+R19
+R20
+R5
+R6
+R0
+R96
+R97
+l0
+L6
+VCX^^k4Hzi94MG?LVc<PQR2
+!s100 Vzz3Kfl?[GL`VG9lf[N6]0
+R9
+32
+R98
+!i10b 1
+R99
+R100
+R101
+!i113 0
+R14
+R15
+Astruct
+R2
+R3
+R19
+R20
+R5
+R6
+R36
+l34
+L25
+VBb89zJ?m7Jk^K6BTbYMH`0
+!s100 eE=_F3Z26P20^]n0N<`_R0
+R9
+32
+R98
+!i10b 1
+R99
+R100
+R101
+!i113 0
+R14
+R15
+Abehavior
+R2
+R3
+R19
+R20
+R5
+R6
+R36
+l18
+L17
+VVQVn3^^7F8GVVklzXnQRB3
+!s100 oR[P;dQI9MOZWV9:^Tzd?0
+R9
+32
+R98
+!i10b 1
+R99
+R100
+R101
+!i113 0
+R14
+R15
+Pmytypes
+R2
+R5
+R6
+w1629885195
+R0
+8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/000-globals.vhd
+F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/000-globals.vhd
+l0
+L4
+VQQZlnJGJmgB>M;REh`cn^0
+!s100 c:hLShTDm6j<VAVD4^72E1
+R9
+32
+!s110 1631266596
+!i10b 1
+!s108 1631266596.000000
+!s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/000-globals.vhd|
+!s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/000-globals.vhd|
+!i113 0
+R14
+R15
+End2
+R103
+R2
+R3
+R5
+R6
+R0
+R104
+R105
+l0
+L5
+V`0Jhk2N]e:_[o;:R?PYTH0
+!s100 <id3CD;QfVNHb371Jeb[^3
+R9
+32
+R106
+!i10b 1
+R107
+R108
+R109
+!i113 0
+R14
+R15
+Aarch2
+R2
+R3
+R5
+R6
+R102
+l21
+L19
+VhDMNAH]>^G2HijI5OgFAO2
+!s100 0dLH68`FO?^?k`hERg`F_1
+R9
+32
+R106
+!i10b 1
+R107
+R108
+R109
+!i113 0
+R14
+R15
+Aarch1
+R2
+R3
+R5
+R6
+R102
+l14
+L12
+VlN^FK2Czz9K6dlcL>bP082
+!s100 e<E77?^cBmJQUA688FlkW0
+R9
+32
+R106
+!i10b 1
+R107
+R108
+R109
+!i113 0
+R14
+R15
+Ep
+R17
+R19
+R20
+R5
+R6
+R0
+R118
+R119
+l0
+L6
+V7:b]>UWl9T`f:2d0_PafW1
+!s100 =4o>?e:dfm7eaE1Yg8;SM3
+R9
+32
+R120
+!i10b 1
+R121
+R122
+R123
+!i113 0
+R14
+R15
+Abehave
+R19
+R20
+R5
+R6
+R117
+l14
+L13
+VOXSE4o8JMHKhF2Efm`^`52
+!s100 egXX9Zga746b44Lo9KZbO1
+R9
+32
+R120
+!i10b 1
+R121
+R122
+R123
+!i113 0
+R14
+R15
+Ep4_adder
+R17
+R18
+R19
+R20
+R5
+R6
+R0
+R111
+R112
+l0
+L9
+VeEYO0[5[QRdG0WI1hiLnJ2
+!s100 3T@dWH=4no?m<m_cA6aoO3
+R9
+32
+R113
+!i10b 1
+R114
+R115
+R116
+!i113 0
+R14
+R15
+Astructural
+R18
+R19
+R20
+R5
+R6
+R28
+l49
+L21
+VBcBgCGA>CM@Y^n>UA52fG2
+!s100 `ShZ>L=lMXA4k0z?2cNLj3
+R9
+32
+R113
+!i10b 1
+R114
+R115
+R116
+!i113 0
+R14
+R15
+Epg
+R17
+R19
+R20
+R5
+R6
+R0
+R124
+R125
+l0
+L6
+VoGI;;mR[C:??1I3Yob^c`1
+!s100 g>632JZM]JFkNQAYA5k`X2
+R9
+32
+R126
+!i10b 1
+R127
+R128
+R129
+!i113 0
+R14
+R15
+Aarch
+R19
+R20
+R5
+R6
+R32
+l31
+L17
+V9zjJL;=R?g8J_Xo@ldGm]1
+!s100 <bbgoZa==W3>O8hS2<6^42
+R9
+32
+R126
+!i10b 1
+R127
+R128
+R129
+!i113 0
+R14
+R15
+Erca
+R17
+R18
+R19
+R20
+R5
+R6
+R0
+R130
+R131
+l0
+L6
+V:m@J^XQP65BC6H6h;fXX:1
+!s100 IaI<g`W`;O:e08<c>U_fR0
+R9
+32
+R132
+!i10b 1
+R133
+R134
+R135
+!i113 0
+R14
+R15
+Abehavioral
+R18
+R19
+R20
+R5
+R6
+R37
+l50
+L47
+Vd2R;[TZk8nbONBIA7CbW>1
+!s100 IiMgeZe0CSJRR7;2RA1D<1
+R9
+32
+R132
+!i10b 1
+R133
+R134
+R135
+!i113 0
+R14
+R15
+Astructural
+R18
+R19
+R20
+R5
+R6
+R37
+l32
+L17
+VkAMBATKNz7B:`33KYI_:82
+!s100 Yc=eU6T:J5K]=Q14li_UI1
+R9
+32
+R132
+!i10b 1
+R133
+R134
+R135
+!i113 0
+R14
+R15
+Eregffd
+R55
+R2
+R3
+R19
+R5
+R6
+R0
+R56
+R57
+l0
+L8
+VCYeG0Z:P]cTAUn]D0zkdo0
+!s100 4AN^fHCT_0_JLeaRO=8E12
+R9
+32
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R14
+R15
+Aasynchbehav
+R2
+R3
+R19
+R5
+R6
+R54
+l38
+L36
+V_7S;iEoY]nd3^`fbic`XJ2
+!s100 Hb^=5R3LBPa6kl?0U__F90
+R9
+32
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R14
+R15
+Asyncbehav
+R2
+R3
+R19
+R5
+R6
+R54
+l22
+L20
+VPo8kAB<Te^S[E:HgU?e:m1
+!s100 H<^D;N2?DhCkTOl8f31Ad1
+R9
+32
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R14
+R15
+Eregister_file
+R137
+R2
+R3
+R4
+R19
+R20
+R5
+R6
+R0
+R138
+R139
+l0
+L7
+V[Vg@B`_cZC]Lif]F[OmJ40
+!s100 AAE<ZVC1TTW2aOOk79EZK2
+R9
+32
+R140
+!i10b 1
+R141
+R142
+R143
+!i113 0
+R14
+R15
+Aa
+R2
+R3
+R4
+R19
+R20
+R5
+R6
+R136
+l29
+L23
+VWJ8oM:i:4j1RXj]2gIK0:0
+!s100 L;EJ[<R<ZZoBQc;hTL8gE3
+R9
+32
+R140
+!i10b 1
+R141
+R142
+R143
+!i113 0
+R14
+R15
+Erocache
+Z232 w1629959357
+R182
+R183
+R19
+R184
+R4
+R5
+R6
+R0
+Z233 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd
+Z234 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd
+l0
+L6
+V?I5`lCRj[Y7A5DOcT6>461
+!s100 5h5oJTgU4e0^oXXK:bR=83
+R9
+32
+Z235 !s110 1629959782
+!i10b 1
+Z236 !s108 1629959782.000000
+Z237 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd|
+Z238 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/rocache.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R182
+R183
+R19
+R184
+R4
+R5
+R6
+DEx4 work 7 rocache 0 22 ?I5`lCRj[Y7A5DOcT6>461
+l29
+L21
+V;aO]76z13fPT[CahR;9WQ2
+!s100 0dU<Ih;DG^A;T7b:eT0lf1
+R9
+32
+R235
+!i10b 1
+R236
+R237
+R238
+!i113 0
+R14
+R15
+Procache_pkg
+R182
+R183
+R19
+R5
+R6
+Z239 w1622405686
+R0
+Z240 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd
+Z241 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd
+l0
+L6
+VNl2m9F3]_gX9ano[EdeZa1
+!s100 Cf?IL7g^9F[N`=b7PhH@a2
+R9
+32
+b1
+Z242 !s110 1631080661
+!i10b 1
+Z243 !s108 1631080660.000000
+Z244 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd|
+Z245 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rocache.vhd|
+!i113 0
+R14
+R15
+Bbody
+R184
+R182
+R183
+R19
+R5
+R6
+l0
+L59
+VW3E4U7dboPOi?[57X?XhF2
+!s100 LiegEkY^ElRGJ4V9]0HBG3
+R9
+32
+R242
+!i10b 1
+R243
+R244
+R245
+!i113 0
+R14
+R15
+Eromem
+Z246 w1630955735
+R182
+R183
+R184
+Z247 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R19
+R5
+R6
+R0
+Z248 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd
+Z249 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd
+l0
+L11
+VI1N7]eNIWLJ40;Fz7dAJW0
+!s100 S==UPBX4oG<oOlQUNgLgi3
+R9
+32
+Z250 !s110 1631080669
+!i10b 1
+Z251 !s108 1631080669.000000
+Z252 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd|
+Z253 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_romem/romem.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R182
+R183
+R184
+R247
+R19
+R5
+R6
+DEx4 work 5 romem 0 22 I1N7]eNIWLJ40;Fz7dAJW0
+l36
+L29
+V:9DXSXhF5kXLnOb`:2<Sh0
+!s100 lJ=_]5X<C;Il>X6hP4X0d1
+R9
+32
+R250
+!i10b 1
+R251
+R252
+R253
+!i113 0
+R14
+R15
+Erwcache
+R239
+R181
+R182
+R183
+R19
+R5
+R6
+R0
+Z254 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwcache.vhd
+Z255 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwcache.vhd
+l0
+L7
+V[ClL;W`<LdM3>AJkfGETE3
+!s100 hce=;Q08MEGH=ijmRAPSW1
+R9
+32
+Z256 !s110 1630431635
+!i10b 1
+Z257 !s108 1630431634.000000
+Z258 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwcache.vhd|
+Z259 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwcache.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R181
+R182
+R183
+R19
+R5
+R6
+DEx4 work 7 rwcache 0 22 [ClL;W`<LdM3>AJkfGETE3
+l50
+L34
+V>P:Di6gbZf198[I[W[PE_0
+!s100 Me9cgOZ@S;5EB8:mKZ?=D0
+R9
+32
+R256
+!i10b 1
+R257
+R258
+R259
+!i113 0
+R14
+R15
+Prwcache_pkg
+R182
+R183
+R19
+R5
+R6
+R239
+R0
+Z260 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd
+Z261 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd
+l0
+L6
+V6oR2bO6jC=Z7dldi?:gVm3
+!s100 `kjRZX4n:Dlb<;5IdYGa33
+R9
+32
+b1
+Z262 !s110 1631080662
+!i10b 1
+Z263 !s108 1631080662.000000
+Z264 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd|
+Z265 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_packages/rwcache.vhd|
+!i113 0
+R14
+R15
+Bbody
+R181
+R182
+R183
+R19
+R5
+R6
+l0
+L60
+Vdk<4K]fLBW?LT]ghB2MM<0
+!s100 `1ZIJg`HGF=o[k<HF00C51
+R9
+32
+R262
+!i10b 1
+R263
+R264
+R265
+!i113 0
+R14
+R15
+Erwmem
+Z266 w1630494296
+R247
+R4
+R5
+R6
+R0
+Z267 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd
+Z268 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd
+l0
+L9
+V7KLHQBc_]S^iV8VVLV<zc3
+!s100 [BIc>dFA4gaB?Ih9H>MBi0
+R9
+32
+Z269 !s110 1631080677
+!i10b 1
+Z270 !s108 1631080676.000000
+Z271 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd|
+Z272 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/test_bench_and_memory/TB_rwmem/rwmem.vhd|
+!i113 0
+R14
+R15
+Abeh
+R247
+R4
+R5
+R6
+DEx4 work 5 rwmem 0 22 7KLHQBc_]S^iV8VVLV<zc3
+l52
+L29
+VR;E]nNfVFeQS[0C71?_]V1
+!s100 If68GD4Y>G2d9_i1njzAE1
+R9
+32
+R269
+!i10b 1
+R270
+R271
+R272
+!i113 0
+R14
+R15
+Eshifter_generic
+R17
+R20
+R19
+R5
+R6
+R0
+Z273 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-generic_shifter.vhd
+Z274 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-generic_shifter.vhd
+l0
+L10
+Vo30e@[]ZY=3mOnhd7Oaa60
+!s100 MkJJNcIQ[8YDbZ;8X2>ZR1
+R9
+32
+Z275 !s110 1631266647
+!i10b 1
+Z276 !s108 1631266647.000000
+Z277 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-generic_shifter.vhd|
+Z278 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/01-generic_shifter.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R20
+R19
+R5
+R6
+R29
+l25
+L23
+V2PMNPbA;TVOSH`b1l;knI1
+!s100 h7UNAYc5TT14zmEN]D<lj3
+R9
+32
+R275
+!i10b 1
+R276
+R277
+R278
+!i113 0
+R14
+R15
+Esign_eval
+Z279 w1629446169
+R2
+R3
+R19
+R5
+R6
+R0
+Z280 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.c-sign_ext.vhd
+Z281 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.c-sign_ext.vhd
+l0
+L7
+VO?KQm=0oCAD[W^UQTfgzc2
+!s100 d2I;<DB@zjbB2OSWX@l?B3
+R9
+32
+Z282 !s110 1631266628
+!i10b 1
+Z283 !s108 1631266627.000000
+Z284 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.c-sign_ext.vhd|
+Z285 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.c-sign_ext.vhd|
+!i113 0
+R14
+R15
+Abhv
+R2
+R3
+R19
+R5
+R6
+DEx4 work 9 sign_eval 0 22 O?KQm=0oCAD[W^UQTfgzc2
+l22
+L18
+VWGCnMWa0B4hE1km11oiWA2
+!s100 09=@LH>T;0[gJFlTd08>]3
+R9
+32
+R282
+!i10b 1
+R283
+R284
+R285
+!i113 0
+R14
+R15
+Esum_generator
+R144
+R18
+R19
+R20
+R5
+R6
+R0
+R145
+R146
+l0
+L6
+VziSDZ05Wa9><dhTl;Z1A;3
+!s100 `8R[lM:moYk_Bf2bH;dL=0
+R9
+32
+R147
+!i10b 1
+R148
+R149
+R150
+!i113 0
+R14
+R15
+Astructural
+R18
+R19
+R20
+R5
+R6
+R110
+l28
+L17
+VWIj_5dCcHWVXAMZKAmjOE2
+!s100 I6CWMTnT_cU8n3LD7H72C0
+R9
+32
+R147
+!i10b 1
+R148
+R149
+R150
+!i113 0
+R14
+R15
+Ewindrf
+R152
+R2
+R3
+R4
+R5
+R6
+R0
+R153
+R154
+l0
+L9
+VM3OCJ39T1hh5_5m6GBoKh2
+!s100 J?=L`_EITV2CkUNjPG5fc0
+R9
+32
+R155
+!i10b 1
+R156
+R157
+R158
+!i113 0
+R14
+R15
+Abhv
+R2
+R3
+R4
+R5
+R6
+R151
+l77
+L40
+V1@`GjZXa;WBkiV6@g8XKW0
+!s100 _5Z[GfOZCk_m0[Q_X@0Zh3
+R9
+32
+R155
+!i10b 1
+R156
+R157
+R158
+!i113 0
+R14
+R15
+Ezero_eval
+Z286 w1629445674
+R4
+R19
+R5
+R6
+R0
+Z287 8/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.a-zero_evaluation.vhd
+Z288 F/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.a-zero_evaluation.vhd
+l0
+L6
+V0i4Loc2DFmf3b6H1>i7Y01
+!s100 SV;;<g8h66[XzB^h3aOa:2
+R9
+32
+Z289 !s110 1631266625
+!i10b 1
+Z290 !s108 1631266625.000000
+Z291 !s90 -reportprogress|300|-work|work|/home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.a-zero_evaluation.vhd|
+Z292 !s107 /home/ms21.42/Desktop/DLX_vhd_fully_synthesizable/a.b-datapath.core/a.b.a-zero_evaluation.vhd|
+!i113 0
+R14
+R15
+Abhv
+R4
+R19
+R5
+R6
+DEx4 work 9 zero_eval 0 22 0i4Loc2DFmf3b6H1>i7Y01
+l15
+L13
+VL98[_Oh5K50_<zH>H;In73
+!s100 mRznoQ@mK]WmRS^?;>jm71
+R9
+32
+R289
+!i10b 1
+R290
+R291
+R292
+!i113 0
+R14
+R15
