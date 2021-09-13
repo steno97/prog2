@@ -181,7 +181,10 @@ end component;
 	signal NPC_fetch: std_logic_vector(NBIT-1 downto 0);
 	signal PC_fetch: std_logic_vector(NBIT-1 downto 0);
 	signal ir_fetch: std_logic_vector(NBIT-1 downto 0);
-	signal PC_ing: std_logic_vector(NBIT-1 downto 0);
+	signal PC_fetch0: std_logic_vector(NBIT-1 downto 0);
+	signal NPC_fetch1: std_logic_vector(NBIT-1 downto 0);
+	signal PC_fetch1: std_logic_vector(NBIT-1 downto 0);
+
 	--pipe
 	signal NPC_Dec: std_logic_vector(NBIT-1 downto 0);
 	signal PC_Dec: std_logic_vector(NBIT-1 downto 0);
@@ -242,30 +245,36 @@ end component;
 begin
 	--stage 1-> inputs: PC; outputs: NPC, IR
 	--fetch
-	pipeline_PCING:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>Pc, Q=>PC_ING);
+	pipeline_PCING:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>'1', D=>Pc, Q=>PC_fetch0);
 	--the signals are generated after one clock cycle so we delayed the pc
 	
 	-- PC->PC+4->NPC	
-	npc_proc:process (pc_ing)
+	npc_proc:process (PC_fetch0)
 	begin 
-       NPC <= std_logic_vector(unsigned(PC_ing) + to_unsigned(1,NBIT));
+       NPC <= std_logic_vector(unsigned(PC_fetch0) + to_unsigned(1,NBIT));
     end process;
 	
 
-	pipeline_fetch_NPC :regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>NPC_LATCH_EN, D=>NPc, Q=>NPC_fetch);
-	pipeline_fetch_PC:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>PC_ing, Q=>PC_fetch);
-	--pipeline_fetch_ir:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>IR, Q=>IR_fetch);
-	---------------------------------------------------------
+	pipeline_fetch1_NPC :regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>NPC_LATCH_EN, D=>NPc, Q=>NPC_fetch1);
+	pipeline_fetch1_PC:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>PC_fetch0, Q=>PC_fetch1);
+
+
+	
 	-- da rimuovere in caso di problemi
 	MUX_PC1: MUX21_GENERIC 
-	Port Map (PC_out_i, NPC_fetch, sel_npc, PC_OUT);
+	Port Map (PC_out_i, NPC_fetch1, sel_npc, PC_OUT);
 	--da rimuovere in caso di problemi	
 	
+	pipeline_fetch_NPC :regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>NPC_LATCH_EN, D=>NPC_fetch1, Q=>NPC_fetch);
+	pipeline_fetch_PC:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>PC_fetch1, Q=>PC_fetch);
+	pipeline_fetch_ir:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>IR, Q=>IR_fetch);
+	---------------------------------------------------------
+
 	--stage 2-> in: NPC, IR, PC; out: NPC, A, B, Imm
 	--pipeline signals (F->D)
 	pipeline_newpc1: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>NPC_LATCH_EN, D=>NPc_fetch, Q=>NPC_Dec);
 	pipeline_pc1:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>PC_fetch, Q=>PC_Dec);
-	pipeline_IR1:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>IR, Q=>IR_Dec);
+	pipeline_IR1:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>IR_LATCH_EN, D=>IR_fetch, Q=>IR_Dec);
 	
 	-- IR assignement
 	IR_OP:IR_DECODE
@@ -375,7 +384,7 @@ begin
 	DATA_MEM_IN<= regB_in;
 	DATA_MEM_RM<=RM; --read=load op
 	DATA_MEM_WM<=WM; --write= store op
-	--DATA_MEM_ENABLE<=(rm or wm) ;
+	
 	
 
 	--this process is used to set the enable to zero after 5 clock cycle 
